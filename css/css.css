@@ -27,14 +27,11 @@
     margin: 0;
 } 
   
-.nav-link {
-    float: left;
-    display: block;
-    background-color: #333;
+.nav-home {
     padding: 0px;
     margin: 0;
     height: 55px;
-  
+    text-align: center;
 } 
   
 li a:hover {
