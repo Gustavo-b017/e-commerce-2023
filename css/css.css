@@ -147,58 +147,14 @@ li a:hover {
 }
 
 
-/* estilizacao do menu(navegacao) */
-/* corpo inteiro do menu, onde define o menu  */
-.nav-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 1px;
-    overflow: hidden;
-    background-color: #333; 
-    position: relative;
-    top: 0;
-    width: 100%;
-    height: 50px;
-} 
 
-/* estilizacao do item do menu */
-.nav-links {
-    float: left;
-    display: block;
-    color: white;
-    text-align: center;
-    font-size: 18px;
-    background-color: #333;
-    padding: 15px;
-    margin: 0;
-} 
 
-/* onde sera colocado a logo como botao de home */
-.nav-home {
-    padding: 0px;
-    margin: 0;
-    height: 55px;
-    text-align: center;
-} 
 
-/* quando de passar o mause a cor da caixa ira mudar */
-li a:hover {
-    background-color: #111;
-}
 
-/* estilizacao que ira informar em qual é a pagina atual */
-.active {
-    background-color: brown;
-    color: white;
-}
 
-/* estilizacao unica do botao login */
-#login {
-    float: right;
-    color: white;
-    background-color: #006635;
-    height: 100%;
-}
+
+
+
 
 
 /* iniciando footer */
