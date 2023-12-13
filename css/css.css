@@ -1,9 +1,32 @@
+/* Geral */
+/* definindo forma geral do site*/
 * {
     margin: 0;
     padding: 0;
     text-decoration: none;
     font-family: "Lucida Sans", sans-serif;
+    list-style-type: none;
 }
+
+.titulo {
+    font-size: 25px;
+    color: #111;
+    padding: 2px;
+    text-align: center;
+
+    border: 2px solid red;
+}
+
+.texto {
+    text-align: center;
+    padding: 3px 0px 3px 0px;
+    
+    border: 2px solid purple;
+}
+
+
+/* estilizacao do menu(navegacao) */
+/* corpo inteiro do menu, onde define o menu  */
 .nav-ul {
     list-style-type: none;
     margin: 0;
@@ -15,7 +38,8 @@
     width: 100%;
     height: 50px;
 } 
-  
+
+/* estilizacao do item do menu */
 .nav-links {
     float: left;
     display: block;
@@ -26,26 +50,119 @@
     padding: 15px;
     margin: 0;
 } 
-  
+
+/* onde sera colocado a logo como botao de home */
 .nav-home {
     padding: 0px;
     margin: 0;
     height: 55px;
     text-align: center;
 } 
-  
+
+/* quando de passar o mause a cor da caixa ira mudar */
 li a:hover {
     background-color: #111;
 }
 
+/* estilizacao que ira informar em qual é a pagina atual */
 .active {
     background-color: brown;
     color: white;
 }
 
+/* estilizacao unica do botao login */
 #login {
     float: right;
     color: white;
     background-color: #006635;
     height: 100%;
 }
+
+
+/* iniciando footer */
+
+.footer-link {
+    color: white;
+    font-size: 17px;
+}
+
+/* definicao das areas que compoe o footer */
+.grid-footer {
+    background-color:darkcyan;
+    display: grid;
+    grid-template-areas: 
+    'links logo projeto'
+    'Guss Fell item4';
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    height: auto;
+}
+
+/* area dos links uteis */
+.grid-link {
+    grid-area: links;
+}
+
+/* area do projeto */
+.grid-projeto {
+    grid-area: projeto;
+}
+
+/* imagem e link do Gustavo */
+.grid-Guss {
+    grid-area: Guss;
+    border: 1px solid gold;
+}
+
+.img-Guss {
+    height: 180px;
+    width: auto;
+    float: left;
+    margin: 15px 20px;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+.participantes {
+    color: lightpink;
+    font-size: 20px;
+    padding: 15px 5px;
+    border: 1px solid black;
+}
+.footer-links {
+    padding: 10px;
+    border: 2px solid green;
+}
+
+.footer-links-midia {
+    color: white;
+    font-size: 20px;
+}
+
+/* imagem e links do felipe */
+.grid-Fell {
+    grid-area: Fell;
+    border: 1px solid gold;
+}
+
+.img-Fell {
+    height: 180px;
+    width: auto;
+    float: right;
+    margin: 15px 20px;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
