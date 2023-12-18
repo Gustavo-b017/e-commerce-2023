@@ -6,7 +6,6 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
- 
     list-style-type: none;
 }
 
@@ -17,8 +16,8 @@
     position: relative;
     right:200px;
     width: 250px;
-    height:auto;    
-    background-color: transparent;
+    height:auto;
+    margin-bottom: 10px;
 } 
 
 .logo-header {
@@ -34,7 +33,7 @@ h2{
     color:#0f0f0f67;
     text-align: left;
     position:relative;
-    left:700px;
+    left:740px;
     bottom:200px;   
 }
 
@@ -78,15 +77,19 @@ header{
     color: #000000;
     font-family:Arial, Helvetica, sans-serif;
     font-size: 21px;
-    font-weight:500;
-    padding: 15px 20px;
+    padding: 20px 20px;
+} 
+
+.nav-links-logo {
+    float: left;
+    display: block;
+    color: #000000;
 } 
 
 .nav-img {
-    padding: 0px;
-    margin: 0;
-    height: 55px;
+    height: 65px;
     width: auto;
+    padding: 0;
 } 
   
 li a:hover {
@@ -133,7 +136,7 @@ h3{
     color:#22222267;
     text-align:left;
     position:relative;
-    left:700px;
+    left:740px;
     bottom:180px;
     cursor:pointer;
 }
@@ -166,7 +169,7 @@ h3::before{
 }
 
 .fundo{
-    width:530px;
+    width:auto;
     height:397px;
     background-color: #1866db34;
     margin-top:-170px;
