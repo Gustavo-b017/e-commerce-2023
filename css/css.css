@@ -1,397 +1,514 @@
 /* Geral */
 /* definindo forma geral do site*/
-  @import url('https://fonts.googleapis.com/css2?family=Konkhmer+Sleokchher&family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Konkhmer+Sleokchher&family=Poppins:wght@600&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
- 
-    list-style-type: none;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	align-items: center;
+	list-style-type: none;
+	border: 1px solid red;
+	height: auto;
 }
 
 
 /* definindo menu do site */
 /* banner do site */
 .logo{
-    position: relative;
-    right:200px;
-    width: 250px;
-    height:auto;    
-    background-color: transparent;
+	position: relative;
+	right:200px;
+	width: 250px;
+	height:auto;    
+	background-color: transparent;
 } 
 
 .logo-header {
-    position: relative;
-    text-align: center;
-    height: 270px;
-    background-color: transparent;
+	position: relative;
+	text-align: center;
+	height: 270px;
+	background-color: transparent;
 }
 
 h2{
-    width:auto;
-    font-size: 30px;
-    color:#0f0f0f67;
-    text-align: left;
-    position:relative;
-    left:740px;
-    bottom:200px;   
+	width:auto;
+	font-size: 30px;
+	color:#0f0f0f67;
+	text-align: left;
+	position:relative;
+	left:740px;
+	bottom:200px;   
 }
 
 h2::before{
-    font-size:auto;
-    content:attr(data-text);
-    position:absolute;
-    color:#ca3636;
-    overflow:hidden;
-    white-space:nowrap;
-    animation:animate 7s linear infinite;
-    filter:drop-shadow(0 0 10px #ffffff66) drop-shadow(0 0 30px #ffffff66);
+	font-size:auto;
+	content:attr(data-text);
+	position:absolute;
+	color:#ca3636;
+	overflow:hidden;
+	white-space:nowrap;
+	animation:animate 7s linear infinite;
+	filter:drop-shadow(0 0 10px #ffffff66) drop-shadow(0 0 30px #ffffff66);
 }
 
 header{
-    height: auto;
-    background-image: linear-gradient(to right,#7fc0e6d2  ,#389dc5d7,#3179cc);
-    background-size: 300% 100%; 
-    animation: gradient 3s infinite alternate;      
+	height: auto;
+	background-image: linear-gradient(to right,#7fc0e6d2  ,#389dc5d7,#3179cc);
+	background-size: 300% 100%; 
+	animation: gradient 3s infinite alternate;      
 }
 
 @keyframes gradient{
-    35%{
-        background-position-x:35%;
-    }
-    100%{
-        background-position-x:80%;
-    }
+	35%{
+			background-position-x:35%;
+	}
+	100%{
+			background-position-x:80%;
+	}
 } 
 
 .nav-ul {
-    overflow: hidden;
-    position:relative;
-    left:15px;
-    bottom:30px;
+	overflow: hidden;
+	position:relative;
+	left:15px;
+	bottom:30px;
 } 
-  
+
 .nav-links {
-    float: left;
-    display: block;
-    color: #000000;
-    font-family:Arial, Helvetica, sans-serif;
-    font-size: 21px;
-    font-weight:500;
-    padding: 15px 20px;
+	float: left;
+	display: block;
+	color: #000000;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 21px;
+	font-weight:500;
+	padding: 15px 20px;
 } 
 
 .nav-img {
-    padding: 0px;
-    margin: 0;
-    height: 55px;
-    width: auto;
+	padding: 0px;
+	margin: 0;
+	height: 55px;
+	width: auto;
 } 
-  
+
 li a:hover {
-  background-color:rgba(0, 0, 0, 0.497);
-  border-radius:10px;
-  color: rgb(255, 255, 255);
-  transition:0.8s;
+background-color:rgba(0, 0, 0, 0.497);
+border-radius:10px;
+color: rgb(255, 255, 255);
+transition:0.8s;
 }
 
 #login {
-    float: right;
-    color: white;
-    position: relative;
-    right:40px;
-    background-color: #2646acd7;
-    border-radius: 10px;
+	float: right;
+	color: white;
+	position: relative;
+	right:40px;
+	background-color: #2646acd7;
+	border-radius: 10px;
 }
 #login:hover{
-  color:black;
-  background-color:rgba(255, 255, 255, 0.781);
-  border-radius:10px;
-  transition:0.5s;
+color:black;
+background-color:rgba(255, 255, 255, 0.781);
+border-radius:10px;
+transition:0.5s;
 }
 
 .linha-horizontal{
-  position: relative;
-  left:20px;
-  bottom:25px;
+position: relative;
+left:20px;
+bottom:25px;
 }
 
 
 
 @keyframes animate{
-    0%,90%,100%{
-        width:0;
-    }
-    50%,90%{
-        width:100%;
-    }
+	0%,90%,100%{
+			width:0;
+	}
+	50%,90%{
+			width:100%;
+	}
 }
 
 h3{
-    font-size: 27px;
-    color:#22222267;
-    text-align:left;
-    position:relative;
-    left:740px;
-    bottom:180px;
-    cursor:pointer;
+	font-size: 27px;
+	color:#22222267;
+	text-align:left;
+	position:relative;
+	left:740px;
+	bottom:180px;
+	cursor:pointer;
 }
 
 h3::before{
-    content:attr(data-text2);
-    position:absolute;
-    color:#ca3636;
-    overflow: hidden;
-    white-space:nowrap;
-    animation:animation 8s linear infinite;
-    filter:drop-shadow(0 0 10px #ffedc559) drop-shadow(0 0 30px #ffedc559);
+	content:attr(data-text2);
+	position:absolute;
+	color:#ca3636;
+	overflow: hidden;
+	white-space:nowrap;
+	animation:animation 8s linear infinite;
+	filter:drop-shadow(0 0 10px #ffedc559) drop-shadow(0 0 30px #ffedc559);
 }
 
 @keyframes animation{
-    0%,60%,100%{
-        width:0;
-    }
-    70%,90%{
-        width:100%;
-    }
+	0%,60%,100%{
+			width:0;
+	}
+	70%,90%{
+			width:100%;
+	}
 }
 
-/* Section banner */
+/* Section banner
 
 .banner{
-    width:100%;
-    height:1000px;
-    background-image: linear-gradient(to right, #45b4e0,#00195e);
+	width:100%;
+	height:1000px;
+	background-image: linear-gradient(to right, #45b4e0,#00195e);
 }
 
 .fundo{
-    width:530px;
-    height:397px;
-    background-color: #1866db34;
-    margin-top:-170px;
-    margin-left:75px;
-    border-radius:5px;
-    border:2px solid rgba(0, 136, 254, 0.495);
+	width:530px;
+	height:397px;
+	background-color: #1866db34;
+	margin-top:-170px;
+	margin-left:75px;
+	border-radius:5px;
+	border:2px solid rgba(0, 136, 254, 0.495);
 }
 
 .empresas{
-    position:relative;
-    top:180px;
-    left:120px;
-    font-size:38px;
-    font-family:arial;
-    font-weight:500;
-    color:rgb(255, 255, 255);
-    width:430px;
-    line-height:70px;
-    height:280px;
-    text-align:left;
-    border-radius:10px;
-    
-    
+	position:relative;
+	top:180px;
+	left:120px;
+	font-size:38px;
+	font-family:arial;
+	font-weight:500;
+	color:rgb(255, 255, 255);
+	width:430px;
+	line-height:70px;
+	height:280px;
+	text-align:left;
+	border-radius:10px;
+	
+	
 }
 
-/* Estilizando slideshow*/
+/* Estilizando slideshow
 .slider{
-    margin:0 auto;
-    width:800px;
-    height:400px;
-    overflow:hidden;
-    border-radius:5px;
-    margin-left:600px;
-    margin-top: -400px;
+	margin:0 auto;
+	width:800px;
+	height:400px;
+	overflow:hidden;
+	border-radius:5px;
+	margin-left:600px;
+	margin-top: -400px;
 }
 .slides{
-    width:400%;
-    height:400px;
-    display:flex;
+	width:400%;
+	height:400px;
+	display:flex;
 }
 
-/*ocultando os inputs */
 
 .slides input{
-    display:none;
+	display:none;
 }
 
 .slide{
-    width:25%;
-    position:relative;
-    transition: 2s;
+	width:25%;
+	position:relative;
+	transition: 2s;
 }
 
 .slide img{
-    width:800px;
+	width:800px;
 }
 
 .manual-navigation{
-    position:absolute;
-    width:800px;
-    margin-top:-40px;
-    display:flex;
-    justify-content:center;
+	position:absolute;
+	width:800px;
+	margin-top:-40px;
+	display:flex;
+	justify-content:center;
 }
 
 .manual-btn{
-    border:2px solid #ffffff;
-    padding:5px;
-    border-radius:10px;
-    cursor:pointer;
-    transition:1s;
+	border:2px solid #ffffff;
+	padding:5px;
+	border-radius:10px;
+	cursor:pointer;
+	transition:1s;
 }
-/* Dando espaçamento para os radios*/
+
 .manual-btn:not(:last-child){
-    margin-right:40px;
+	margin-right:40px;
 }
-/* Aplicando hover aos radios*/
 .manual-btn:hover{
-    background-color:#FFF;
+	background-color:#FFF;
 }
-/*manipuladno inputs*/
+
 #radio1:checked ~ .first{
-    margin-left:0;
+	margin-left:0;
 }
 #radio2:checked ~ .first{
-    margin-left:-800px;
+	margin-left:-800px;
 }
 #radio3:checked ~ .first{
-    margin-left:-50%;
+	margin-left:-50%;
 }
 #radio4:checked ~ .first{
-    margin-left:-75%;
+	margin-left:-75%;
 }
 #radio5:checked ~ .first{
-    margin-left:-100%;
+	margin-left:-100%;
 }
 .navigation-auto div{
-    border:2px solid #20a6ff;
-    padding:5px;
-    border-radius: 10px;
-    cursor:pointer;
-    transition:1s;
+	border:2px solid #20a6ff;
+	padding:5px;
+	border-radius: 10px;
+	cursor:pointer;
+	transition:1s;
 }
 .navigation-auto{
-    position:absolute;
-    width:800px;
-    margin-top:360px;
-    display:flex;
-    justify-content:center;
+	position:absolute;
+	width:800px;
+	margin-top:360px;
+	display:flex;
+	justify-content:center;
 }
 
 .navigation-auto div:not(:last-child){
-    margin-right:40px;
+	margin-right:40px;
 }
-
-/* Para os radios ficarem ativos caso o usuário clicar nele*/
-
+}
 #radio1:checked ~ .navigation-auto .auto-btn1{
-    background-color: #FFF;
+	background-color: #FFF;
 }
 #radio2:checked ~ .navigation-auto .auto-btn2{
-    background-color: #FFF;
+	background-color: #FFF;
 }
 #radio3:checked ~ .navigation-auto .auto-btn3{
-    background-color: #FFF;
+	background-color: #FFF;
 }
 #radio4:checked ~ .navigation-auto .auto-btn4{
-    background-color: #FFF;
+	background-color: #FFF;
 }
 #radio5:checked ~ .navigation-auto .auto-btn5{
-    background-color: #FFF;
+	background-color: #FFF;
+}
+*/
+
+
+section {
+	margin: 0;
+	padding: 0;
+	border: 2px solid red;
+	width: 100%;
+	height: auto;
+	align-items: center;
 }
 
- 
+.slide-geral {
+	margin: 0 auto;
+	width: 800px;
+	height: 400px;
+	overflow: hidden;
+}
+
+.slides {
+	width: 500%;
+	height: 400px;
+	display: flex;
+}
+
+.slides input {
+	display: none;
+}
+
+.slide {
+	width: 25%;
+	position: relative;
+	transition: 2s;
+}
+
+.slide img {
+	width: 800px;
+}
+
+.nav-manual {
+	position: absolute;
+	width: 800px;
+	margin-top: -45px;
+	display: flex;
+	justify-content: center;
+}
+
+.btn-manual {
+	border: 2px solid #fff;
+	border-radius: 10px;
+	padding: 5px;
+	cursor: pointer;
+	transition: 0.8s;
+	margin: 12px;
+}
+
+.btn-manual:hover {
+	background-color: #fff
+}
+
+#radio1:checked  ~ .slide.first  {
+	margin-left: 0;
+}
+
+#radio2:checked ~ .slide.first {
+	margin-left: -25%;
+}
+#radio3:checked ~ .slide.first {
+	margin-left: -50%;
+}
+#radio4:checked ~ .slide.first {
+	margin-left: -75%;
+}
+#radio5:checked ~ .slide.first {
+	margin-left: -100%;
+}
+
+.auto-nav div {
+	border: 2px solid #fff;
+	border-radius: 10px;
+	padding: 5px;
+	cursor: pointer;
+	transition: 0.8s;
+	margin: 12px;
+}
+
+.auto-nav {
+	position: absolute;
+	width: 800px;
+	margin-top: 351px;
+	display: flex;
+	justify-content: center;
+}
+
+#radio1:checked ~ .auto-nav .btn-auto1 {
+	background-color: #fff
+}
+
+#radio2:checked ~ .auto-nav .btn-auto2 {
+	background-color: #fff
+}
+
+#radio3:checked ~ .auto-nav .btn-auto3 {
+	background-color: #fff
+}
+
+#radio4:checked ~ .auto-nav .btn-auto4 {
+	background-color: #fff
+}
+
+#radio5:checked ~ .auto-nav .btn-auto5 {
+	background-color: #fff
+}
+
+#radio5:checked ~ .auto-nav .btn-auto5 {
+	background-color: #fff
+}
+
+
+
+
 
 
 /* iniciando footer */
 .titulo {
-    font-size: 25px;
-    color: #111;
-    padding: 2px;
-    text-align: center;
-    position:relative;
-    top:300px;
-    right:300px;
+	font-size: 25px;
+	color: #111;
+	padding: 2px;
+	text-align: center;
+	position:relative;
+	top:300px;
+	right:300px;
 }
 
 .texto {
-    text-align: center;
-    padding: 3px 0px 3px 0px;
+	text-align: center;
+	padding: 3px 0px 3px 0px;
 }
 
 .footer-link {
-    color: white;
-    font-size: 17px;
+	color: white;
+	font-size: 17px;
 }
 
 /* definicao das areas que compoe o footer */
 .grid-footer {
-    background-color:#0385b8;
-    display: grid;
-    grid-template-areas: 
-    'links logo projeto'
-    'Guss Fell item4';
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    height: auto;
+	background-color:#0385b8;
+	display: grid;
+	grid-template-areas: 
+	'links logo projeto'
+	'Guss Fell item4';
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: auto;
+	height: auto;
 }
 
 /* area dos links uteis */
 .grid-link {
-    grid-area: links;
+	grid-area: links;
 }
 
 /* area do projeto */
 .grid-projeto {
-    grid-area: projeto;
+	grid-area: projeto;
 }
 
 /* imagem e link do Gustavo */
 .grid-Guss {
-    grid-area: Guss;
+	grid-area: Guss;
 }
 
 .img-Guss {
-    height: 180px;
-    width: auto;
-    float: left;
-    margin: 15px 20px;
-    border: 2px solid white;
-    border-radius: 10px;
+	height: 180px;
+	width: auto;
+	float: left;
+	margin: 15px 20px;
+	border: 2px solid white;
+	border-radius: 10px;
 }
 
 .participantes {
-    color: lightpink;
-    font-size: 20px;
-    padding: 15px 5px;
+	color: lightpink;
+	font-size: 20px;
+	padding: 15px 5px;
 }
 .footer-links {
-    padding: 10px;
+	padding: 10px;
 }
 
 .footer-links-midia {
-    color: white;
-    font-size: 20px;
+	color: white;
+	font-size: 20px;
 }
 
 /* imagem e links do felipe */
 .grid-Fell {
-    grid-area: Fell;
-    float: right;
+	grid-area: Fell;
+	float: right;
 }
 
 .img-Fell {
-    height: 180px;
-    width: auto;
-    float: right;
-    margin: 15px 20px;
-    border: 2px solid white;
-    border-radius: 10px;
+	height: 180px;
+	width: auto;
+	float: right;
+	margin: 15px 20px;
+	border: 2px solid white;
+	border-radius: 10px;
 }
 
 .links-fell {
-    padding: 10px;
-    float: right;
+	padding: 10px;
+	float: right;
 }
 
 
