@@ -25,15 +25,16 @@ header{
 .logo{
 	position: relative;
     right:350px;
-    width: 550px;
-    height:auto;
+    width: auto;
+	height: 270px;
     background-color: transparent;
+	padding: 0;
+	top: 20px;
 } 
 
 .logo-header {
 	text-align: center;
     background-color: transparent;
-	
 }
 
 .nav-ul {
@@ -106,6 +107,8 @@ h2{
     bottom:200px;
     font-family: Arial;
     cursor:pointer;
+	
+	
 }
 
 h2::before{
@@ -305,8 +308,8 @@ section {
 	background-color:#0385b8;
 	display: grid;
 	grid-template-areas: 
-	'links logo projeto'
-	'Guss Fell item4';
+	'item1 logo projeto'
+	'Guss Fell links';
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: auto;
 	height: auto;
@@ -374,7 +377,7 @@ section {
 
 /* iniciando footer */
 .titulo {
-	font-size: 25px;
+	font-size: 35px;
 	color: #111;
 	text-align: center;
 	position:relative;
@@ -385,6 +388,7 @@ section {
 .texto {
 	text-align: center;
 	padding: 3px 0px 3px 0px;
+	font-size: 20px;
 }
 
 .footer-link {

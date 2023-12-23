@@ -1,42 +1,243 @@
 <!DOCTYPE html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="../css/css.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Home</title>
+	<link rel="stylesheet" href="../css/css.css">
 </head>
+
 <body>
-    
-    
-<!-- menu de navegacao -->
-    <nav >
-        <!-- criando uma lista e estilizando ela -->
-        <ul class="nav-ul">
-            <li  >
-                <a href="./home-sem-login.html" class="nav-links active" > Home
-                    <!-- <img id="home" src="./imagens/logo-solo 30.png" class="logo-nav" >  -->
-                </a>
-            </li>
+	
+	<!--Criando header-->
+<header>    
+	<!-- menu de navegacao -->
+	<div class="logo-header">
+			<img src="../imagens/Inserir um título (2)-PhotoRoom.png-PhotoRoom.png" class="logo" >
+		
+		<ul class="texto-header">
+			<li>
+				<h2 data-text="Bem vindo ao marketplace de cursos de programação">Bem vindo ao marketplace de cursos de programação</h2>
+			</li>
+			<li>
+				<h3 data-text2="Aqui, sua carreira é nossa responsabilidade">Aqui, sua carreira é nossa responsabilidade</h3>
+			</li>
+		</ul>	
 
-            <li >
-                <a href="./cursos-sem-login.html" class="nav-links"> Cursos</a>
-            </li>
+	</div>
 
-            <li >
-                <a href="./sobre.html" class="nav-links"> Sobre</a>
-            </li>
+			
+	<nav >
+		<!-- criando uma lista e estilizando ela -->
+		<ul class="nav-ul">
+			
+			<li>
+				<a href="./home-sem-login.html" class="nav-links active" id="home-nav"> HOME
+				<!-- <img id="home" src="./imagens/logo-solo 30.png" class="nav-img" >  -->
+				</a>
+			</li>             
 
-            <li >
-                <a href="./projeto-sem-login.html" class="nav-links"> Projeto</a>
-            </li>
+			<li>
+				<a href="./cursos-sem-login.html" class="nav-links" >Cursos</a>
+			</li>
 
-            <li >
-                <a href="./login.html" class="nav-links" id="login"> Login</a> 
-            </li>
+			<li >
+				<a href="./sobre.html" class="nav-links">Sobre</a>
+			</li>
 
-        </ul>
-    </nav>
+			<li >
+				<a href="./projeto-sem-login.html" class="nav-links">Projeto</a>
+			</li>
 
-    home
+			<li >
+				<a href="./login.html" class="nav-links hover-home-login" id="login">Login</a> 
+			</li>
+
+		</ul>
+	</nav>
+
+	<hr class="linha-horizontal">   
+
+</header>
+
+<section>
+	
+	<h1 id="titulo-slide">Pricipais empresas do mercado de cursos sobre programação:</h1>
+
+	<div class="slide-geral">
+		<!-- crinado os botoes de navegacao -->
+		<div class="slides">
+				<input type="radio" name="radio-btn" id="radio1">
+				<input type="radio" name="radio-btn" id="radio2">
+				<input type="radio" name="radio-btn" id="radio3">
+				<input type="radio" name="radio-btn" id="radio4">
+				<input type="radio" name="radio-btn" id="radio5">
+		
+			<!-- criando as imagens do slide -->
+			<div class="slide first">
+				<img src="../imagens/alura.png">
+			</div>
+			
+			<div class="slide ">
+				<img src="../imagens/coursera.jpg">
+			</div>
+
+			<div class="slide ">
+				<img src="../imagens/shift-fiap.png" >
+			</div>
+
+			<div class="slide">
+				<img src="../imagens/udemy.jpg">
+			</div>
+
+			<div class="slide ">
+				<img src="../imagens/estacio.png">
+			</div>
+
+			<!-- criando uma auto navegacao -->
+			<div class="auto-nav">
+				<div class="btn-auto1"></div>
+				<div class="btn-auto2"></div>
+				<div class="btn-auto3"></div>
+				<div class="btn-auto4"></div>
+				<div class="btn-auto5"></div>
+			</div>
+		</div>
+	
+		<div class="nav-manual">
+			<label for="radio1" class="btn-manual"></label>
+			<label for="radio2" class="btn-manual"></label>
+			<label for="radio3" class="btn-manual"></label>
+			<label for="radio4" class="btn-manual"></label>
+			<label for="radio5" class="btn-manual"></label>
+		</div>
+	</div>
+
+</section>
+
+
+
+<footer>
+	<div class="grid-footer">
+
+		<div class="grid-link">
+			<ul>
+				<li class="titulo">
+					Links Úteis: 
+				</li>
+					
+				<li class="texto">
+					<a class="footer-link" href="../sem login/sobre.html">Sobre</a>
+				</li>
+						
+				<li class="texto" >
+					<a class="footer-link" href="Projeto">Projeto</a>
+				</li>
+				
+				<li class="texto">
+					<a class="footer-link" href="../sem login/cursos-sem-login.html">Cursos</a>
+				</li>
+			</ul>
+		</div>
+	
+
+
+		<div class="grid-projeto">
+			<ul >				
+				<li class="titulo">
+					Projeto: 
+				</li>
+							
+				<li class="texto" >	
+					<a class="footer-link" href="../c">Duvidas Frequentes</a>
+				</li>
+				
+				<li class="texto" >	
+					<a class="footer-link" href="../c"></a>
+				</li>
+				<li class="texto" >	
+					<a class="footer-link" href="../c">Contato</a>
+				</li>
+
+			</ul>
+		</div>
+
+		<!-- informacoes e foto do Gustavo -->
+		<div class="grid-Guss">			
+						
+			<div> 
+				<img src="../imagens/perfil na floresta.png" class="img-Guss">
+			</div> 
+
+			<div>
+				<table>
+					<tr>
+						<td class="participantes">
+							<p>Gustavo Bezerra Assumção </p>
+						</td>
+					</tr>
+							
+					<tr>
+						<td class="footer-links">
+							<a href="https://www.linkedin.com/in/gustavo-bezerra-829202289/" class="footer-links-midia" > Linkedin</a>
+						</td>
+					</tr>
+					
+					<tr>
+						<td class="footer-links">
+							<a href="https://www.instagram.com/gustavo_b017/" class="footer-links-midia" > Instagram</a>
+						</td>
+					</tr>
+							
+					<tr>
+						<td class="footer-links" >
+							<a href="https://github.com/Gustavo-b017" class="footer-links-midia"> Github</a> 
+						</td>
+					</tr>
+			
+				</table>	
+			</div>
+		</div>
+
+		<!-- Informacoes e foto do Felipe -->
+		<div class="grid-Fell">
+			<div> 
+				<img src="../imagens/fell-img.jpeg" class="img-Fell">
+			</div> 
+
+			<div style="float: right;">
+				<table >
+					<tr>
+						<td class="participantes">
+							<p> Felipe Ferreira  </p>
+						</td>				
+					</tr>
+							
+					<tr>
+						<td class="links-fell">
+							<a href="https://www.linkedin.com/in/felipe-ferreira-1aa6331a7/" class="footer-links-midia" > Linkedin</a>
+						</td>
+					</tr>
+				
+					<tr>
+						<td class="links-fell">
+							<a href="https://www.instagram.com/feelipensez/" class="footer-links-midia" > Instagram</a>
+						</td>
+					</tr>
+							
+					<tr>
+						<td class="links-fell" >
+								<a href="https://github.com/fellipefferreira" class="footer-links-midia"> Github</a> 
+						</td>			
+					</tr>
+
+				</table>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<!-- <script src="script.js"></script> -->
+<script src="../JS/slides.js"></script>
+
 </body>
 </html>
