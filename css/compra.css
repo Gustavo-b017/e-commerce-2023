@@ -1,0 +1,79 @@
+.display-compra {
+    display: grid;
+    grid-template-areas: 
+	'informacoes preco';
+	grid-template-columns: 3fr 1fr;
+	grid-template-rows: auto;
+	height: auto;
+	margin: 20px;
+	padding: 10px;
+}
+
+.informacoes {
+	grid-area: informacoes;
+	border: 1px solid red;
+}
+
+.produto-titulo {
+	font-size: 35px;
+	padding: 15px;
+}
+
+.descricao-produto {
+	height: auto;
+	width: 60%;
+	font-size: 18px;
+	border: 2px solid gray;
+	border-radius: 9px;
+	background-color:ivory;
+	padding: 15px;
+	margin: 0 15px;
+}
+
+.pagamento div {
+	margin: 15px;
+	margin-top: 17px;
+	font-size: 22px;
+}
+.pagamento ul {
+	display: flex;
+	height: auto;
+	margin: 10px;
+}
+
+.pagamento img {
+	border: 1px solid red;
+	padding: 5px;
+	width: 95px;
+	height: 47px;
+	border-radius: 10px;
+	background-color: white;
+}
+
+
+.preco {
+	grid-area: preco;
+	border: 2px solid gold;
+	position: sticky;
+}
+
+.descricao-compra {
+	height: auto;
+	width: 80%;
+	font-size: 18px;
+	border: 2px solid rgb(88, 85, 85);
+	border-radius: 10px;
+	background-color:rgb(196, 197, 199);
+	margin: auto;
+	padding: 15px;
+	color: black;
+	justify-content: center;
+}
+
+
+
+
+
+
+
+

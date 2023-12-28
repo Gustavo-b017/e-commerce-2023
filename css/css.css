@@ -176,7 +176,7 @@ h3::before{
 } 
 
 section {
-	margin: 0 0;
+	margin: 0;
 	padding: 100px 0;
 	width: 100%;
 	height: auto;
@@ -185,12 +185,17 @@ section {
 	justify-content: center;
 }
 
+
+/*  pagina home - secao de slide */
+/* definindo a fonte e tamanho do titulo do slide */
 #titulo-slide {
 	padding: 5px;
 	font-size: 30px;
 	text-align: center;
+	padding: 10px;
 }
 
+/* definicao da caixa em si onde contera todos os slides, marcando limites */
 .slide-geral {
 	margin: 0 auto;
 	width: 800px;
@@ -198,6 +203,7 @@ section {
 	overflow: hidden;
 }
 
+/* definicao de tamanho de todas as imagens do slide e sua ordem */
 .slides {
 	width: 420%;
 	height: 400px;
@@ -205,28 +211,33 @@ section {
 	align-items: center;
 }
 
+
 .slides input {
 	display: none;
 }
 
+/* tamanho das imagens do slide */
 .slide {
 	width: 25%;
 	position: relative;
 	transition: 2s;
 }
 
+/* tamanho da caixa onde os slides aparecem */
 .slide img {
 	width: 800px;
 }
 
+/* caixa onde mantem os botoes manuais */
 .nav-manual {
-	position: absolute;
+	position: relative;
 	width: 800px;
 	margin-top: -45px;
 	display: flex;
 	justify-content: center;
 }
 
+/* forma e estilo do primeiro botao */
 .btn-manual {
 	border: 2px solid #fff;
 	border-radius: 10px;
@@ -236,10 +247,12 @@ section {
 	margin: 12px;
 }
 
+/* cor do botao quando se passa o mouse */
 .btn-manual:hover {
 	background-color: #fff
 }
 
+/* comando que define qual botao é resposnsavel por cada pagina */
 #radio1:checked  ~ .slide.first  {
 	margin-left: 0;
 }
@@ -257,6 +270,7 @@ section {
 	margin-left: -100%;
 }
 
+/* estilo e formato dos botoes  */
 .auto-nav div {
 	border: 2px solid #fff;
 	border-radius: 10px;
@@ -266,6 +280,7 @@ section {
 	margin: 12px;
 }
 
+/* posicao dos botoes */
 .auto-nav {
 	position: absolute;
 	width: 800px;
@@ -274,6 +289,7 @@ section {
 	justify-content: center;
 }
 
+/* boatao permanece na cor quando selecionado  */
 #radio1:checked ~ .auto-nav .btn-auto1 {
 	background-color: #fff
 }
@@ -298,6 +314,7 @@ section {
 	background-color: #fff
 }
 
+/* finalizacao dos slides */
 
 
 
