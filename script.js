@@ -13,3 +13,4 @@ function nextImage(){ // criando a função
     }
     document.getElementById("radio"+count).checked = true; // Se a contagem não for maior que 5, muda para próxima imagem
 }
+
