@@ -1,0 +1,82 @@
+
+
+section {
+  display: grid;
+  grid-template-areas: 
+  "logo info";
+  grid-template-columns: 1fr 1fr;
+}
+
+section img {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.livro-direito {
+  grid-area: info;
+}
+
+.livro-direito img {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.login {
+  position: relative;
+  border: 1px solid rgb(196  197 205);
+  width: 70%;
+  height: auto;
+  margin: 100px auto;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+
+.form-control {
+  margin: 25px;
+  grid-area: info;
+}
+
+.form-control input[type="text"], 
+.form-control input[type="password"] {
+  width: 80%;
+  /* da um espacamento do texto de dentro da caixa de pergunta, da um espacamento no miolo da caixa */
+  padding: 12px 20px;
+  /* da um espacamento do texto de dentro da caixa de pergunta para a esquerda */
+  padding-left: 5px;
+
+  outline: 0;
+}
+
+button {
+  margin-bottom: 20px;
+  /* define a cor do botao */
+  background: rgb(5, 1, 54);
+  /* define a cor da letra do botao */
+  color: #fff;
+  /* define o tamanho da fonte */
+  font-size: 16px;
+  /* da um espacamento do texto de dentro da caixa de pergunta, da um espacamento no miolo da caixa */
+  padding: 10px;
+  /* cria uma borda envolta da caixa */
+  border: 0;
+  /* cria um estilo do mause de mao quando se passa por cima */
+  cursor: pointer;
+}
+
+
+.erro {
+  color: red;
+  text-align: left;
+  margin-left: 32px;
+  transition: all .2s;
+}
+
+.esconder{
+  display: none
+}

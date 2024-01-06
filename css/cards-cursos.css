@@ -99,53 +99,51 @@ transition:0.5s;
 
 h2{
 	width:800px;
-    font-size: 30px;
-    color:#22222267;
-    text-align:left;
-    position:relative;
-    left:600px;
-    bottom:200px;
-    font-family: Arial;
-    cursor:pointer;
-	
-	
+	font-size: 30px;
+	color:#22222267;
+	text-align:left;
+	position:relative;
+	left:600px;
+	bottom:200px;
+	font-family: Arial;
+	cursor:pointer;	
 }
 
 h2::before{
 	font-size:30px;
-    content:attr(data-text);
-    position:absolute;
-    color:#fff;
-    width:800px;
-    overflow:hidden;
-    white-space:nowrap;
-    border-right:1px solid #ffffff00;
-    animation:animate 3s linear ;
-    cursor:pointer;
+	content:attr(data-text);
+	position:absolute;
+	color:#fff;
+	width:800px;
+	overflow:hidden;
+	white-space:nowrap;
+	border-right:1px solid #ffffff00;
+	animation:animate 3s linear ;
+	cursor:pointer;
 }
 
 h3{
 	width:655px;
-    font-size: 30px;
-    color:#22222267;
-    text-align:left;
-    position:relative;
-    left:600px;
-    bottom:180px;
-    font-family: Arial;
-    cursor:pointer;
+	font-size: 30px;
+	color:#22222267;
+	text-align:left;
+	position:relative;
+	left:600px;
+	bottom:180px;
+	font-family: Arial;
+	cursor:pointer;
 }
 
 h3::before{
 	content:attr(data-text2);
-    position:absolute;
-    color:#fff;
-    width:700px;
-    overflow: hidden;
-    white-space:nowrap;
-    border-right:1px solid #ffffff00;
-    animation:animation 5s linear ;
-    cursor:pointer;
+	position:absolute;
+	color:#fff;
+	width:700px;
+	overflow: hidden;
+	white-space:nowrap;
+	border-right:1px solid #ffffff00;
+	animation:animation 5s linear ;
+	cursor:pointer;
 }
 
 @keyframes animation{
@@ -159,20 +157,20 @@ h3::before{
 
 @keyframes animate{
 	0%{
-        width:0;
-    }
-    100%{
-        width:100%;
-    }
+			width:0;
+	}
+	100%{
+			width:100%;
+	}
 }
 
 @keyframes gradient{
-	35%{
-			background-position-x:35%;
-	}
-	100%{
-			background-position-x:80%;
-	}
+35%{
+		background-position-x:35%;
+}
+100%{
+		background-position-x:80%;
+}
 } 
 
 section {
@@ -186,135 +184,6 @@ section {
 }
 
 
-/*  pagina home - secao de slide */
-/* definindo a fonte e tamanho do titulo do slide */
-#titulo-slide {
-	padding: 5px;
-	font-size: 30px;
-	text-align: center;
-	padding: 10px;
-}
-
-/* definicao da caixa em si onde contera todos os slides, marcando limites */
-.slide-geral {
-	margin: 0 auto;
-	width: 800px;
-	height: 400px;
-	overflow: hidden;
-}
-
-/* definicao de tamanho de todas as imagens do slide e sua ordem */
-.slides {
-	width: 420%;
-	height: 400px;
-	display: flex;
-	align-items: center;
-}
-
-
-.slides input {
-	display: none;
-}
-
-/* tamanho das imagens do slide */
-.slide {
-	width: 25%;
-	position: relative;
-	transition: 2s;
-}
-
-/* tamanho da caixa onde os slides aparecem */
-.slide img {
-	width: 800px;
-}
-
-/* caixa onde mantem os botoes manuais */
-.nav-manual {
-	position: relative;
-	width: 800px;
-	margin-top: -45px;
-	display: flex;
-	justify-content: center;
-}
-
-/* forma e estilo do primeiro botao */
-.btn-manual {
-	border: 2px solid #fff;
-	border-radius: 10px;
-	padding: 5px;
-	cursor: pointer;
-	transition: 0.8s;
-	margin: 12px;
-}
-
-/* cor do botao quando se passa o mouse */
-.btn-manual:hover {
-	background-color: #fff
-}
-
-/* comando que define qual botao é resposnsavel por cada pagina */
-#radio1:checked  ~ .slide.first  {
-	margin-left: 0;
-}
-
-#radio2:checked ~ .slide.first {
-	margin-left: -25%;
-}
-#radio3:checked ~ .slide.first {
-	margin-left: -50%;
-}
-#radio4:checked ~ .slide.first {
-	margin-left: -75%;
-}
-#radio5:checked ~ .slide.first {
-	margin-left: -100%;
-}
-
-/* estilo e formato dos botoes  */
-.auto-nav div {
-	border: 2px solid #fff;
-	border-radius: 10px;
-	padding: 5px;
-	cursor: pointer;
-	transition: 0.8s;
-	margin: 12px;
-}
-
-/* posicao dos botoes */
-.auto-nav {
-	position: absolute;
-	width: 800px;
-	margin-top: 351px;
-	display: flex;
-	justify-content: center;
-}
-
-/* boatao permanece na cor quando selecionado  */
-#radio1:checked ~ .auto-nav .btn-auto1 {
-	background-color: #fff
-}
-
-#radio2:checked ~ .auto-nav .btn-auto2 {
-	background-color: #fff
-}
-
-#radio3:checked ~ .auto-nav .btn-auto3 {
-	background-color: #fff
-}
-
-#radio4:checked ~ .auto-nav .btn-auto4 {
-	background-color: #fff
-}
-
-#radio5:checked ~ .auto-nav .btn-auto5 {
-	background-color: #fff
-}
-
-#radio5:checked ~ .auto-nav .btn-auto5 {
-	background-color: #fff
-}
-
-/* finalizacao dos slides */
 
 /* criando os cards dos produtos - SHIFT FIAP */
 .fiap-cards{
@@ -436,8 +305,9 @@ section {
     height:30px;
     border-radius:10px;
     cursor:pointer;
-    background-color: #FFF;
-    border:1px solid black;
+    background-color: darkgreen;
+		color: #fff;
+    border:1px solid;
     font-family:arial;
     font-size:15px;
 }
