@@ -1,71 +1,57 @@
-
+body {
+  background-image: linear-gradient(to right, #45b4e0,#2b55ca);
+}
 
 section {
+  background-image: url(../imagens/livro-antigo.jpg);
+  width: 1020px;
+  height: 495px;
+  margin: 0px 250px;
   display: grid;
-  grid-template-areas: 
-  "logo info";
-  grid-template-columns: 1fr 1fr;
+	grid-template-areas: 
+	'logo info';
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto;
 }
 
-section img {
-  width: 100%;
-  height: 100%;
-  padding: 0;
-  margin: 0;
-}
-
-.livro-direito {
-  grid-area: info;
-}
-
-.livro-direito img {
-  width: 100%;
-  height: 100%;
-  padding: 0;
-  margin: 0;
+.logo-login {
+  grid-area: logo;
+  width: 60%;
+  height: auto;
+  margin: 0px 140px;
+  align-items: center;
 }
 
 .login {
-  position: relative;
-  border: 1px solid rgb(196  197 205);
-  width: 70%;
+  grid-area: info;
+  width: 90%;
   height: auto;
-  margin: 100px auto;
-  padding: 10px;
+  margin: 0px -10px;
+  padding:auto;
   text-align: center;
-  border-radius: 10px;
+  align-items: center;
 }
 
 
 .form-control {
   margin: 25px;
-  grid-area: info;
 }
 
 .form-control input[type="text"], 
 .form-control input[type="password"] {
-  width: 80%;
-  /* da um espacamento do texto de dentro da caixa de pergunta, da um espacamento no miolo da caixa */
+  width: 70%;
   padding: 12px 20px;
-  /* da um espacamento do texto de dentro da caixa de pergunta para a esquerda */
   padding-left: 5px;
-
   outline: 0;
 }
 
 button {
   margin-bottom: 20px;
-  /* define a cor do botao */
   background: rgb(5, 1, 54);
-  /* define a cor da letra do botao */
   color: #fff;
-  /* define o tamanho da fonte */
   font-size: 16px;
-  /* da um espacamento do texto de dentro da caixa de pergunta, da um espacamento no miolo da caixa */
   padding: 10px;
-  /* cria uma borda envolta da caixa */
   border: 0;
-  /* cria um estilo do mause de mao quando se passa por cima */
   cursor: pointer;
 }
 
