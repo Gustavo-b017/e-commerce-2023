@@ -32,9 +32,12 @@ section {
   align-items: center;
 }
 
-
 .form-control {
   margin: 25px;
+}
+
+.form-control input {
+  font-size: 15px;
 }
 
 .form-control input[type="text"], 
@@ -43,6 +46,22 @@ section {
   padding: 12px 20px;
   padding-left: 5px;
   outline: 0;
+}
+
+.links-login {
+  color: dimgrey;
+  font-size: 16px;
+  margin: 4px;
+  padding: 4px;
+}
+
+.links-login a {
+  color: black;
+}
+
+.links-login a:hover {
+  color: #d6201a;
+  font-size: 20px;
 }
 
 button {
@@ -58,8 +77,9 @@ button {
 
 .erro {
   color: red;
+  
   text-align: left;
-  margin-left: 32px;
+  margin: 5px 40px;
   transition: all .2s;
 }
 

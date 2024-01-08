@@ -1,40 +1,41 @@
 const button = document.querySelector("button");
-const inputNome = document.querySelector("#nome")
 const inputEmail = document.querySelector("#email")
+const inputSenha = document.querySelector("#senha")
+
 const pMensagem = document.createElement('p')
 
 
 function clearForm() {
-    inputNome.value = ""
-    inputEmail.value = ""
+inputEmail.value = ""
+inputSenha.value = ""
 }
 
 button.addEventListener("click", function(event){
-    event.preventDefault()
+event.preventDefault()
 
-    // validacao
+// validacao
 
-    if(inputNome.value.trim() === ""){
-        pMensagem.textContent = "*Campo Obrigatorio"
-        inputNome.insertAdjacentElement("afterend", pMensagem)
-        pMensagem.setAttribute("class", "erro")
+if(inputEmail.value.trim() === ""){
+	pMensagem.textContent = "*É obrigatório por o email ou CPF!!"
+	inputEmail.insertAdjacentElement("afterend", pMensagem)
+	pMensagem.setAttribute("class", "erro")
 
-        return false
-    }
+	return false
+}
 
-    if(inputEmail.value.trim() === ""){
-        pMensagem.textContent = "*Campo Obrigatorio"
-        inputEmail.insertAdjacentElement("afterend", pMensagem)
-        pMensagem.setAttribute("class", "erro")
+if(inputSenha.value.trim() === ""){
+	pMensagem.textContent = "*É obrigatório por senha!!"
+	inputSenha.insertAdjacentElement("afterend", pMensagem)
+	pMensagem.setAttribute("class", "erro")
 
-        return false
-    }
+	return false
+}
 
-    // logica
+// logica
 
 
-    pMensagem.classList.add("esconder")
-    clearForm()
+pMensagem.classList.add("esconder")
+clearForm()
 })
 
 
