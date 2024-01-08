@@ -1,6 +1,8 @@
 /* Geral */
 /* definindo forma geral do site*/
 @import url('https://fonts.googleapis.com/css2?family=Konkhmer+Sleokchher&family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
 
 * {
 	margin: 0;
@@ -443,9 +445,9 @@ section {
 }
  li:hover ul{
 	visibility:visible;
-	
-	
-	
+}
+ul:hover #botao-enviar-formulario{
+	visibility: visible;
 }
 .botao-contato{
 	width:150px;
@@ -465,10 +467,6 @@ section {
 	color:#FFF;
 	cursor:pointer;
 	position:relative;
-	
-
-	
-
 }
 #contato-palavra:hover{
 	color:black;
@@ -485,6 +483,7 @@ input{
 	visibility:hidden;
 	
 }
+
 form{
 	padding-top:150px;
 
@@ -527,15 +526,39 @@ form{
 
 #idMensagem{
 	position: relative;
-	left:280px;
+	left:400px;
 	bottom:80px;
 	width:550px;
 	height:150px;
 	font-size:35px;
 	border:none;
 	border-radius: 7px;
-	
+}
 
+
+#botao-enviar-formulario{
+	width:300px;
+	height:50px;
+	border:none;
+	border-radius: 5px;
+	background-color:#0000008f;
+	position:relative;
+	right:540px;
+	bottom:20px;
+	font-size:20px;
+	font-family: 'Poppins', sans-serif;
+	cursor:pointer;
+	color:#FFF;
+	font-weight:600;
+}
+#botao-enviar-formulario:hover{
+	background-color: rgba(254, 204, 66, 0.795);
+	transition:0.4s;
+	box-shadow:0 0 20px 5px rgba(0, 0, 0, 0.377);
+	font-size:25px;
+	width:310;
+	height:60px;
+	font-weight: bold;
 }
 
 
