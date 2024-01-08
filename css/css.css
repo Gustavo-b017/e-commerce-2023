@@ -346,6 +346,7 @@ section {
 /* imagem e link do Gustavo */
 .grid-Guss {
 	grid-area: Guss;
+	
 }
 
 .img-Guss {
@@ -375,6 +376,7 @@ section {
 .grid-Fell {
 	grid-area: Fell;
 	float: right;
+	
 }
 
 .img-Fell {
@@ -412,6 +414,132 @@ section {
 	color: white;
 	font-size: 17px;
 }
+
+
+/* formulario contato drop */
+.formulario{
+	background-color: #0385b8;
+	width:1139px;
+	height:334px;
+	position:relative;
+	visibility: hidden;
+	position:absolute;
+	right:350px;
+	bottom:-690px;
+	cursor:pointer;
+	border:2px solid rgba(255, 255, 255, 0.597);
+	border-radius: 7px;
+
+	
+}
+.formulario:hover input{
+	visibility: visible;
+
+}
+
+.formulario form{
+	position:absolute;
+	visibility:hidden;
+}
+ li:hover ul{
+	visibility:visible;
+	
+	
+	
+}
+.botao-contato{
+	width:150px;
+	height:50px;
+	background-color: #00000066;
+	border:none;
+	position:relative;
+	right:730px;
+	bottom:81px;
+}
+.botao-contato:hover{
+	background-color: #FFF;
+	transition: 1s;
+	transform: 1s;
+}
+#contato-palavra{
+	color:#FFF;
+	cursor:pointer;
+	position:relative;
+	
+
+	
+
+}
+#contato-palavra:hover{
+	color:black;
+	background-color: transparent;
+}
+#contato-li{
+	width:30px;
+	padding-left:182px;
+}
+
+
+input{
+	background-color: white;
+	visibility:hidden;
+	
+}
+form{
+	padding-top:150px;
+
+}
+#idNome{
+	position:relative;
+	left:100px;
+	bottom:120px;
+	font-size:25px;
+	width:350px;
+	height:40px;
+	border:none;
+	border-radius: 7px;
+
+}
+
+#idWhatsapp{
+	position:relative;
+	bottom:120px;
+	left:150px;
+	width:350px;
+	height:40px;
+	border: none;
+	font-size:25px;
+	border-radius: 7px;
+
+}
+
+#idEmail{
+	position:relative;
+	right:610px;
+	bottom:10px;
+	font-size:25px;
+	width:350px;
+	height:40px;
+	border:none;
+	border-radius: 7px;
+
+}
+
+#idMensagem{
+	position: relative;
+	left:280px;
+	bottom:80px;
+	width:550px;
+	height:150px;
+	font-size:35px;
+	border:none;
+	border-radius: 7px;
+	
+
+}
+
+
+
 
 
 
