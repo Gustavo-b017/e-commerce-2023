@@ -419,34 +419,50 @@ section {
 /* formulario contato drop */
 .formulario{
 	background-color: #0385b8;
-	width:1139px;
-	height:334px;
-	position:relative;
-	visibility: hidden;
+	width: 60%;
+	height: 40%;
+	/* visibility: hidden;  */
 	position:absolute;
 	right:350px;
-	bottom:-690px;
+	bottom: -660px;
 	cursor:pointer;
 	border:2px solid rgba(255, 255, 255, 0.597);
-	border-radius: 7px;
-
-	
+	border-radius: 10px;
 }
+
 .formulario:hover input{
 	visibility: visible;
-
 }
 
 .formulario form{
-	position:absolute;
-	visibility:hidden;
+	height: ;
+	border: 2px solid black;
 }
+
+.form-footer{
+	padding: auto;
+	display: grid;
+	grid-template-areas: 
+	'item1 nome item2'
+	'email whats'
+	'mensagem item3'
+	'item4 botao item5';
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 2fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: auto;
+}
+
+.form-footer input{
+	background-color: white;
+}
+
+.form-footer input{
+	background-color: white;
+}
+
  li:hover ul{
-	visibility:visible;
-	
-	
-	
+	visibility:visible;	
 }
+
 .botao-contato{
 	width:150px;
 	height:50px;
@@ -456,98 +472,61 @@ section {
 	right:730px;
 	bottom:81px;
 }
+
 .botao-contato:hover{
 	background-color: #FFF;
 	transition: 1s;
 	transform: 1s;
 }
+
 #contato-palavra{
 	color:#FFF;
 	cursor:pointer;
 	position:relative;
-	
-
-	
-
 }
+
 #contato-palavra:hover{
 	color:black;
 	background-color: transparent;
 }
+
 #contato-li{
 	width:30px;
 	padding-left:182px;
 }
 
-
-input{
-	background-color: white;
-	visibility:hidden;
-	
-}
-form{
-	padding-top:150px;
-
-}
 #idNome{
-	position:relative;
-	left:100px;
-	bottom:120px;
-	font-size:25px;
-	width:350px;
-	height:40px;
+	grid-area: nome;
+	width: 400px;
 	border:none;
 	border-radius: 7px;
-
+	font-size:23px;
 }
 
 #idWhatsapp{
-	position:relative;
-	bottom:120px;
-	left:150px;
-	width:350px;
-	height:40px;
-	border: none;
-	font-size:25px;
+	grid-area: whats;
+	width: 400px;
+	border:none;
 	border-radius: 7px;
-
+	font-size:23px;
 }
 
 #idEmail{
-	position:relative;
-	right:610px;
-	bottom:10px;
-	font-size:25px;
-	width:350px;
-	height:40px;
+	grid-area: email;
+	width: 400px;
 	border:none;
 	border-radius: 7px;
-
+	font-size:23px;
 }
 
 #idMensagem{
-	position: relative;
-	left:280px;
-	bottom:80px;
-	width:550px;
-	height:150px;
+	grid-area: mensagem;
 	font-size:35px;
 	border:none;
 	border-radius: 7px;
-	
-
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+#btn {
+	grid-area: botao;
+	height: 200px;
+}
