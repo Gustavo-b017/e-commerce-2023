@@ -427,7 +427,8 @@ section {
 	visibility: hidden;
 	position:absolute;
 	right:350px;
-	bottom:-690px;
+	margin-top:-132px;
+   
 	cursor:pointer;
 	border:2px solid rgba(255, 255, 255, 0.597);
 	border-radius: 7px;
@@ -448,9 +449,6 @@ section {
 }
 ul:hover #botao-enviar-formulario{
 	visibility: visible;
-}
-ul:hover #voltar{
-	visibility:visible;
 }
 .botao-contato{
 	width:150px;
@@ -562,13 +560,6 @@ form{
 	width:310;
 	height:60px;
 	font-weight: bold;
-}
-#voltar{
-	position: relative;
-	bottom:220px;
-	left:320px;
-	
-
 }
 
 
