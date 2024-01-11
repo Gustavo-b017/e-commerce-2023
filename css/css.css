@@ -490,8 +490,16 @@ section {
 	border-radius: 7px;
 }
 
-#botao-contato-enviar {
+.botao-contato-form {
 	font-size: 17px;
 	background-color: #1dd3e0;
 	padding: 10px 18px;
+}
+
+.none {
+	display: none;
+}
+
+.block {
+	display: block;
 }
