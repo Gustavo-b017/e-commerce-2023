@@ -39,3 +39,19 @@ clearForm()
 })
 
 
+
+	function validar(){
+		
+
+		let usuario = document.getElementById('email').value;
+		let senha = document.getElementById('senha').value;
+	
+		if(usuario ==="Admin" && senha ==="12345")
+		{
+			window.open('../com login/meus-cursos.html');
+		}else{
+		alert("Email ou senha incorretos")
+		}
+	}
+
+
