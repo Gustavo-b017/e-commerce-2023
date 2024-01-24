@@ -22,6 +22,8 @@ section {
   align-items: center;
 }
 
+
+
 .login {
   grid-area: info;
   width: 90%;
@@ -72,8 +74,14 @@ button {
   padding: 10px;
   border: 0;
   cursor: pointer;
+
 }
 
+#botao-entrar{
+  position:relative;
+  left:700px;
+  bottom:100px;
+}
 
 .erro {
   color: red;
