@@ -2,9 +2,9 @@ section {
   margin: 0;
   padding: 30px;
   font-family: sans-serif;
-  border: 1px solid red;
+  border: 2px solid red;
   display: grid; 
-  width: 100%;
+  width: 96.2%;
   height: 100%;
   place-content: center;
 }
@@ -20,7 +20,7 @@ section {
   width: 200px;
   transform-style: preserve-3d;
   transform: rotateY(0deg);
-  transition: transform 1s;
+  transition: transform 0.5s;
 }
 
 .front, .conteudo {
@@ -39,6 +39,14 @@ section {
 .box-geral:hover .box-estatico {
   transform: rotateY(180deg);
 }
+
+.box-geral:hover .box-estatico {
+  width: 1500px;
+  height: 500px;
+}
+
+
+
 
 
 
