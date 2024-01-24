@@ -1,0 +1,49 @@
+section {
+  margin: 0;
+  padding: 30px;
+  font-family: sans-serif;
+  border: 1px solid red;
+  display: grid; 
+  place-content: center;
+}
+
+.box-geral {
+  background-color: transparent;
+}
+
+.box-estatico {
+  position: relative;
+  background-color: transparent;
+  height: 200px;
+  width: 200px;
+  transform-style: preserve-3d;
+  transform: rotateY(0deg);
+  transition: transform 0.8s;
+}
+
+.front, .conteudo {
+  background-color: blueviolet;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.conteudo {
+  background-color: aqua;
+  transform: rotateY(180deg) ;
+}
+
+.box-geral:hover .box-estatico {
+  transform: rotateY(180deg);
+}
+
+
+
+
+
+
+
+
+
+

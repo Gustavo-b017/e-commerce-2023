@@ -31,6 +31,14 @@ if(inputSenha.value.trim() === ""){
 	return false
 }
 
+if(inputSenha.value.trim() === ""){
+	pMensagem.textContent = "*É obrigatório por senha!!"
+	inputSenha.insertAdjacentElement("afterend", pMensagem)
+	pMensagem.setAttribute("class", "erro")
+
+	return false
+}
+
 // logica
 
 
