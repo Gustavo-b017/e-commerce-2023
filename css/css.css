@@ -503,3 +503,43 @@ section {
 .block {
 	display: block;
 }
+
+/* Estilizando meus-cursos */
+
+.mochila-img{
+	width:550px;
+	height:550px;
+	background:linear-gradient(to right,rgba(230, 220, 153, 0.389),rgba(164, 164, 164, 0.301));
+	transition:.1s linear;
+	cursor:pointer;
+}
+.mochila-img:hover{
+	background:linear-gradient(to right,rgba(237, 226, 151, 0.389),rgba(131, 131, 131, 0.301));
+}
+.mochila-img:hover img{
+    width:525px;
+	height:725px;
+    transition:.1s linear;
+
+}
+.mochila-img img{
+	margin-top:-40px;
+	width:500px;
+	height:700px;
+	transition:.1s linear;
+}
+
+.cursos-adquiridos{
+	width:971px;
+	height:550px;
+	background:linear-gradient(to right,rgba(230, 220, 153, 0.389),rgba(164, 164, 164, 0.301));
+	
+}
+
+#cursos-usuario{
+	display:flex;
+	justify-content: space-between;
+
+	
+}
+
