@@ -1,42 +1,366 @@
 <!DOCTYPE html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cursos</title>
-    <link rel="stylesheet" href="../css/css.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Home</title>
+	<link rel="icon" href="imagens/programacao.png">
+	<link rel="stylesheet" href="../css/cards-cursos.css">
 </head>
+
 <body>
+	
+	<!--Criando header-->
+    <header>    
+        <!-- menu de navegacao -->
+        <div class="logo-header">
+                <img src="../imagens/Inserir um título (2)-PhotoRoom.png-PhotoRoom.png" class="logo" >
+            
+            <ul class="texto-header">
+                <li>
+                    <h2 data-text="Bem vindo ao marketplace de cursos de programação">Bem vindo ao marketplace de cursos de programação</h2>
+                </li>
+                <li>
+                    <h3 data-text2="Aqui, sua carreira é nossa responsabilidade">Aqui, sua carreira é nossa responsabilidade</h3>
+                </li>
+            </ul>	
     
+        </div>
+        
+        <nav >
+            <!-- criando uma lista e estilizando ela -->
+            <ul class="nav-ul">
+                
+                <li  >
+                    <a href="./home-com-login.html" class="nav-links" > Home
+                        <!-- <img id="home" src="./imagens/logo-solo 30.png" class="logo-nav" >  -->
+                    </a>
+                </li>
     
-<!-- menu de navegacao -->
-    <nav >
-        <!-- criando uma lista e estilizando ela -->
-        <ul class="nav-ul">
-            <li  >
-                <a href="./home-com-login.html" class="nav-links" > Home
-                    <!-- <img id="home" src="./imagens/logo-solo 30.png" class="logo-nav" >  -->
-                </a>
-            </li>
+                <li >
+                    <a href="./meus-cursos.html" class="nav-links"> Meus Cursos</a>
+                </li>
+    
+                <li >
+                    <a href="./cursos-com-login.html" class="nav-links active"> Cursos</a>
+                </li>
+    
+                <li >
+                    <a href="./projeto-com-login.html" class="nav-links"> Projeto</a>
+                </li>
+    
+                <li >
+                    <a href="./perfil.html" class="nav-links" id="login"> Perfil</a> 
+                </li>
+            </ul>
+        </nav>
+    
+        <hr class="linha-horizontal">   
+    
+    </header>
 
-            <li >
-                <a href="./meus-cursos.html" class="nav-links"> Meus Cursos</a>
-            </li>
 
-            <li >
-                <a href="./cursos-com-login.html" class="nav-links active"> Cursos</a>
-            </li>
+<section class="fiap-cards">
+	<div class="fundo-titutlo-shiftfiap">
+	<h1 class="shift">Shift</h1> 
+	<h1 class="fiap">FIAP</h1>
+    </div>
+	
+	    <div  id="fundo-cards">
+	        <div class="card">
+	                <div class="imagem">
+                       <img src="/imagens/python-fundamentals.jpg" alt="Shift FIAP" class="python-img-card" width="302px" height="302px">
+		            </div>
+		            <div class="conteudo">
+			           <div class="titulo">Python</div>
+			           <div class="preco">R$300,00</div>
+					   <a href="compra-sem-login.html">
+			           <button type="button" class="botao-comprar">Comprar</button>
+					</a>
+		            </div>
+					
+	        </div>
 
-            <li >
-                <a href="./projeto-com-login.html" class="nav-links"> Projeto</a>
-            </li>
+			
+			<div class="card">
+						<div class="imagem">
+						   <img src="/imagens/java.png" alt="Shift FIAP" class="java-img-card" width="302px" height="600px">
+						</div>
+						<div class="conteudo">
+						   <div class="titulo">Java </div>
+						   <div class="preco">R$450,00</div>
+						   <a href="compra-sem-login.html">
+						   <button type="button" class="botao-comprar">Comprar</button>
+						</a>
+						</div>
+			</div>
 
-            <li >
-                <a href="./perfil.html" class="nav-links" id="login"> Perfil</a> 
-            </li>
+			<div class="card">
+				<div class="imagem">
+				   <img src="/imagens/IA.jpg" alt="Shift FIAP" class="IA-img-card" width="302px" height="302px">
+				</div>
+				<div class="conteudo">
+				   <div class="titulo-IA">IA. Generativa</div>
+				   <div class="preco">R$500,00</div>
+				   <a href="compra-sem-login.html">
+				   <button type="button" class="botao-comprar">Comprar</button>
+				</a>
+				</div>
+	        </div>
 
-        </ul>
-    </nav>
+			<div class="card">
+				<div class="imagem">
+				   <img src="/imagens/CYBER_SECURITY__RTDS_Technologies_Inc..jpg" alt="Shift FIAP" class="security-img-card" width="302px" height="302px">
+				</div>
+				<div class="conteudo">
+				   <div class="titulo-security">Cyber Security</div>
+				   <div class="preco">R$360,00</div>
+				   <a href="compra-sem-login.html">
+				   <button type="button" class="botao-comprar">Comprar</button>
+				</a>
+				</div>
+	</div>
+			
+	    </div>
+	
+   
+</div>
+</section>
 
-    cursos
+<section class="fiap-cards">
+	<div class="fundo-titutlo-shiftfiap">
+	<h1 class="alura">Alura</h1> 
+	
+    </div>
+	
+	    <div  id="fundo-cards">
+	        <div class="card">
+	                <div class="imagem">
+                       <img src="/imagens/python-alura.png" alt="Shift FIAP" class="python-alura-img-card" width="302px" height="302px">
+		            </div>
+		            <div class="conteudo">
+			           <div class="titulo">Python</div>
+			           <div class="preco">R$300,00</div>
+					   <a href="compra-sem-login.html">
+			           <button type="button" class="botao-comprar">Comprar</button>
+					</a>
+		            </div>
+					
+	        </div>
+
+			
+			<div class="card">
+						<div class="imagem">
+						   <img src="/imagens/javascript-alura2.jpg" alt="Shift FIAP" class="javascript-alura-img-card" width="302px" height="600px">
+						</div>
+						<div class="conteudo">
+						   <div class="titulo-javascript-alura">Java Script </div>
+						   <div class="preco">R$450,00</div>
+						   <a href="compra-sem-login.html">
+						   <button type="button" class="botao-comprar">Comprar</button>
+						</a>
+						</div>
+			</div>
+
+			<div class="card">
+				<div class="imagem">
+				   <img src="/imagens/ia-alura.jpg" alt="Shift FIAP" class="IA-alura-img-card" width="302px" height="302px">
+				</div>
+				<div class="conteudo">
+				   <div class="titulo-IA">IA. Generativa</div>
+				   <div class="preco">R$500,00</div>
+				   <a href="compra-sem-login.html">
+				   <button type="button" class="botao-comprar">Comprar</button>
+				</a>
+				</div>
+	        </div>
+
+			<div class="card">
+				<div class="imagem">
+				   <img src="/imagens/ciber-alura.jpg" alt="Shift FIAP" class="security-alura-img-card" width="302px" height="302px">
+				</div>
+				<div class="conteudo">
+				   <div class="titulo-security">Cyber Security</div>
+				   <div class="preco">R$360,00</div>
+				   <a href="compra-sem-login.html">
+				   <button type="button" class="botao-comprar">Comprar</button>
+				</a>
+				</div>
+	</div>
+			
+	    </div>
+	
+   
+</div>
+</section>
+
+
+
+
+
+
+
+
+
+<footer>
+	<div class="grid-footer">
+
+		<div class="grid-contato">
+			
+			<ul>
+				<li>
+					<button class="botao-contato" id="btn-contato">
+						<a>Entre em contato</a>
+					</button>	
+				</li>
+
+				<div class="formulario none">
+
+					<table>
+						<tr>
+							<td>
+								<input type="text"  placeholder="Nome">
+							</td>
+						</tr>
+						
+						<tr>
+							<td >
+								<input type="text" placeholder="Email">
+							</td>
+							<td>
+								<input type="text" placeholder="Whatsapp">
+							</td>
+						</tr>
+						
+						<tr>
+							<td >
+								<input type="text" id="mensagem" placeholder="Mensagem...">
+							</td>
+						</tr>
+						
+						<tr>
+							<td >
+								<button class="botao-contato-form" type="submit">Enviar</button>
+							</td>
+							
+							<td >
+								<button id="fechar-contato"  class="botao-contato-form"type="submit">Fechar</button>
+							</td>
+						</tr>
+						
+					</table>
+				</div>
+			</ul>
+		</div>
+
+		<div class="grid-link">
+			<ul>
+				<li class="titulo">
+					Links Úteis: 
+				</li>
+					
+				<li class="texto">
+					<a class="footer-link" href="./sobre.html">Sobre</a>
+				</li>
+						
+				<li class="texto" >
+					<a class="footer-link" href="./projeto-sem-login.html">Projeto</a>
+				</li>
+				
+				<li class="texto">
+					<a class="footer-link" href="./cursos-sem-login.html">Cursos</a>
+				</li>
+			</ul>
+		</div>
+	
+
+
+		<div class="grid-projeto">
+			<ul>				
+				<li class="titulo">Projeto: </li>
+							
+				<li class="texto" >	
+					<a class="footer-link" href="./c">Duvidas Frequentes </a>
+				</li>
+				
+			</ul>
+		</div>
+
+		<!-- informacoes e foto do Gustavo -->
+		<div class="grid-Guss">			
+						
+			<div> 
+				<img src="../imagens/perfil na floresta.png" class="img-Guss">
+			</div> 
+
+			<div>
+				<table>
+					<tr>
+						<td class="participantes">
+							<p>Gustavo Bezerra Assumção </p>
+						</td>
+					</tr>
+							
+					<tr>
+						<td class="footer-links">
+							<a href="https://www.linkedin.com/in/gustavo-bezerra-829202289/" class="footer-links-midia" > Linkedin</a>
+						</td>
+					</tr>
+					
+					<tr>
+						<td class="footer-links">
+							<a href="https://www.instagram.com/gustavo_b017/" class="footer-links-midia" > Instagram</a>
+						</td>
+					</tr>
+							
+					<tr>
+						<td class="footer-links" >
+							<a href="https://github.com/Gustavo-b017" class="footer-links-midia"> Github</a> 
+						</td>
+					</tr>
+			
+				</table>	
+			</div>
+		</div>
+
+		<!-- Informacoes e foto do Felipe -->
+		<div class="grid-Fell">
+			<div> 
+				<img src="../imagens/fell-img.jpeg" class="img-Fell">
+			</div> 
+
+			<div style="float: right;">
+				<table >
+					<tr>
+						<td class="participantes">
+							<p> Felipe Ferreira  </p>
+						</td>				
+					</tr>
+							
+					<tr>
+						<td class="links-fell">
+							<a href="https://www.linkedin.com/in/felipe-ferreira-1aa6331a7/" class="footer-links-midia" > Linkedin</a>
+						</td>
+					</tr>
+				
+					<tr>
+						<td class="links-fell">
+							<a href="https://www.instagram.com/feelipensez/" class="footer-links-midia" > Instagram</a>
+						</td>
+					</tr>
+							
+					<tr>
+						<td class="links-fell" >
+								<a href="https://github.com/fellipefferreira" class="footer-links-midia"> Github</a> 
+						</td>			
+					</tr>
+
+				</table>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<script src="../JS/slides.js"></script>
+
 </body>
 </html>
