@@ -54,55 +54,63 @@
     
     </header>
     
-<section id="cursos-usuario" class="mochila-click">
-    <button class="mochila-img" onclick="descerMeusCursos()">
+<!--<section id="cursos-usuario" class="mochila-click">-->
+<section id="myCourses">
+	<h1 class="meus-cursos-titulo">Meus cursos</h1>
+    <button class="mochila-img" onclick="toggle()">
         <img src="../imagens/computer.png" id="mochila-click" alt="Cursos">
     </button>
 </section>
 
-<section class="cursos-adquiridos none" id="meus-cursos-adquiridos">
-    <div class="card">
-        <div class="imagem">
-           <img src="/imagens/python-fundamentals.jpg" alt="Shift FIAP" class="python-img-card" width="302px" height="302px">
-        </div>
-        <div class="conteudo">
-           <div class="titulo">Python - Shif Fiap</div>
-           <a href="compra-sem-login.html">
-              <button type="button"><img src="../imagens/botao-play-ponta-de-seta.png" width="30px" height="30px"></button>
-           </a>
-        </div>
-        
-    </div>
+	<div class="cursos-adquiridos none" id="div-cursos">
+		<button id="close" onclick="closeCourses()"><img src="../imagens/fechar.png"></button>
+		<div class="card" id="card">
+			<div class="imagem">
+			   <img src="/imagens/python-fundamentals.jpg" alt="Shift FIAP" class="python-img-card" width="302px" height="302px">
+			</div>
+			<div class="conteudo">
+			   <div class="titulo">Python - Shif Fiap</div>
+			   <a href="https://www.fiap.com.br/shift/curso/tecnologia/python-fundamentals/">
 
-    <div class="card">
-        <div class="imagem">
-           <img src="/imagens/python-alura.png" alt="Shift FIAP" class="python-alura-img-card" width="302px" height="302px">
-        </div>
-        <div class="conteudo">
-           <div class="titulo">Python - Alura</div>
-           <a href="compra-sem-login.html">
-              <button type="button"><img src="../imagens/botao-play-ponta-de-seta.png" width="30px" height="30px"></button>
-           </a>
-        </div>
-        
-    </div>
+				  <button type="button"><img src="../imagens/botao-play-ponta-de-seta.png" width="30px" height="30px"></button>
+			   </a>
+			</div>
+			
+		</div>
+	
+		<div class="card" id="card">
+			<div class="imagem">
+			   <img src="/imagens/python-alura.png" alt="Shift FIAP" class="python-alura-img-card" width="302px" height="302px">
+			</div>
+			<div class="conteudo">
+			   <div class="titulo">Python - Alura</div>
+			   <a href="https://www.alura.com.br/curso-online-flask-crie-webapp-python">
+				  <button type="button"><img src="../imagens/botao-play-ponta-de-seta.png" width="30px" height="30px"></button>
+			   </a>
+			</div>
+			
+		</div>
+	
+		<div class="card" id="card">
+			<div class="imagem">
+			   <img src="/imagens/javascript-alura2.jpg" alt="Shift FIAP" class="javascript-alura-img-card"  width="302px" height="302px">
+			</div>
+			<div class="conteudo">
+			   <div class="titulo">Java Script - Alura</div>
+			   <a href="https://www.alura.com.br/curso-online-javascript-introducao">
+				  <button type="button"><img src="../imagens/botao-play-ponta-de-seta.png" width="30px" height="30px"></button>
+			   </a>
+			</div>
+			
+		</div>
+	
+	
+	
+	</div>
+	
+<!--</section>-->
 
-    <div class="card">
-        <div class="imagem">
-           <img src="/imagens/javascript-alura2.jpg" alt="Shift FIAP" class="javascript-alura-img-card"  width="302px" height="302px">
-        </div>
-        <div class="conteudo">
-           <div class="titulo">Java Script - Alura</div>
-           <a href="compra-sem-login.html">
-              <button type="button"><img src="../imagens/botao-play-ponta-de-seta.png" width="30px" height="30px"></button>
-           </a>
-        </div>
-        
-    </div>
 
-
-
-</section>
 
 <footer>
 	<div class="grid-footer">
