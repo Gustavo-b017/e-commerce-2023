@@ -1,42 +1,375 @@
 <!DOCTYPE html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto</title>
-    <link rel="stylesheet" href="../css/css.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Home</title>
+	<link rel="stylesheet" href="../css/css.css">
+	<link rel="stylesheet" href="../css/projeto.css">
 </head>
+
 <body>
+	
+	<!--Criando header-->
+    <header>    
+        <!-- menu de navegacao -->
+        <div class="logo-header">
+                <img src="../imagens/Inserir um título (2)-PhotoRoom.png-PhotoRoom.png" class="logo" >
+            
+            <ul class="texto-header">
+                <li>
+                    <h2 data-text="Bem vindo ao marketplace de cursos de programação">Bem vindo ao marketplace de cursos de programação</h2>
+                </li>
+                <li>
+                    <h3 data-text2="Aqui, sua carreira é nossa responsabilidade">Aqui, sua carreira é nossa responsabilidade</h3>
+                </li>
+            </ul>	
     
+        </div>
+        
+        <nav >
+            <!-- criando uma lista e estilizando ela -->
+            <ul class="nav-ul">
+                
+                <li  >
+                    <a href="./home-com-login.html" class="nav-links" > Home
+                        <!-- <img id="home" src="./imagens/logo-solo 30.png" class="logo-nav" >  -->
+                    </a>
+                </li>
     
-<!-- menu de navegacao -->
-    <nav >
-        <!-- criando uma lista e estilizando ela -->
-        <ul class="nav-ul">
-            <li  >
-                <a href="./home-com-login.html" class="nav-links" > Home
-                    <!-- <img id="home" src="./imagens/logo-solo 30.png" class="logo-nav" >  -->
-                </a>
-            </li>
+                <li >
+                    <a href="./meus-cursos.html" class="nav-links"> Meus Cursos</a>
+                </li>
+    
+                <li >
+                    <a href="./cursos-com-login.html" class="nav-links"> Cursos</a>
+                </li>
+    
+                <li >
+                    <a href="./projeto-com-login.html" class="nav-links active"> Projeto</a>
+                </li>
+    
+                <li >
+                    <a href="./perfil.html" class="nav-links" id="login"> Perfil</a> 
+                </li>
+            </ul>
+        </nav>
+    
+        <hr class="linha-horizontal">   
+    
+    </header>
+<!--
+	1. proposito e inpiracao
+	2. como/quando foi feito (estudantes)
+	3. linguagens usadas (javascript, html e css)
+	4. sobre os criadores (fell e guss)
+	
+ -->
 
-            <li >
-                <a href="./meus-cursos.html" class="nav-links"> Meus Cursos</a>
-            </li>
+<section class="seletor-da-seção">
+	
+	<div class="box-geral">
+		
+		<div class="box-estatico">
+		
+			<div class="front">
+				<h1> frente </h1>
+			</div>
 
-            <li >
-                <a href="./cursos-com-login.html" class="nav-links"> Cursos</a>
-            </li>
+			<div class="conteudo">
+				
+				<div class="conteudo-interno">
+						
+					<div class="conteudo-video">
+						
+						<h1> Video pitch: </h1>
+						
+						<video controls class="video">
+							<source src="" type="video/mp4">
+						</video>
 
-            <li >
-                <a href="./projeto-com-login.html" class="nav-links active"> Projeto</a>
-            </li>
+					</div>
+				
+					<div class="conteudo-perguntas">
+						
+						<h1> Perguntas frequentes</h1>
 
-            <li >
-                <a href="./perfil.html" class="nav-links" id="login"> Perfil</a> 
-            </li>
+						<div class="Perguntas">
+							
+							<div>
+								<button class="botao-pergunta" id="pergunta-01"> Qual e o nosso proposito e insiracao? </button>
+								
+								<div class="none" id="proposito">
+									
+									<div class="texto-01 box-pergunta">
+										ssssssssssssssssssssssssssssssssssssssssssssssssssssss
+										dddddddddddddddddddddddddddsssssssssssssssssssssssssssss
+										ssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+										asadassndgkjnfsdgnfdjnhjngfhnngfhkngfknhkgfnhkngfhjnnkhj
+										klnyfhgkjnkhgnjklhjnhgknjklhj
+									</div>
 
-        </ul>
-    </nav>
+									<button class="esconder" id="fechar-1"> 
+										<b>fechar</b>
+									</button>
+								</div>
+							</div>
+							
+							<div>
+								<button class="botao-pergunta" id="pergunta-02"> Quando e como foi feito? </button>
+								
+								<div class="none" id="projeto-dados">
+									
+									<div class="texto-2 box-pergunta">
+										ssssssssssssssssssssssssssssssssssssssssssssssssssssss
+										dddddddddddddddddddddddddddsssssssssssssssssssssssssssss
+										ssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+										asadassndgkjnfsdgnfdjnhjngfhnngfhkngfknhkgfnhkngfhjnnkhj
+										klnyfhgkjnkhgnjklhjnhgknjklhj
+									</div>
 
-    projeto
+									<button class="esconder" id="fechar-2"> 
+										<b>fechar</b>
+									</button>
+								</div>
+							
+							<div>
+								<button class="botao-pergunta" id="pergunta-3"> Quem sâo os criadores? </button>
+								
+								<div class="none" id="criadores">
+									
+									<div class="texto-3 box-pergunta">
+										
+										<!-- guss -->
+										<div>
+											
+											<button class="botao-pergunta-cria" id="pergunta-guss"> Quem é Gustavo Bezerra Assumção? </button>
+											
+											<div class="none" id="criadores-guss">
+												
+												<div class="texto-guss box-pergunta">
+													
+													<div id="img-guss-projeto">
+														<img src="../imagens/perfil na floresta.png">
+
+														<p> &nbsp;&nbsp; Olá, sou o <b>Gustavo Bezerra Assumção </b>, estudante de engenharia de software na FIAP. 
+															<br>	&nbsp;&nbsp;&nbsp; Entusiasta da tecnologia, amo e gosto de aprender tudo relacionado a tecnologia.
+															<br>  &nbsp;&nbsp;&nbsp; Além disso, sou dedicado em tudo em que faço, &nbsp;&nbsp; &nbsp;
+															principalmente ligado ao que amo!
+														</p>
+													</div>	
+													
+													<button class="esconder" id="fechar-guss"> 
+														<b>fechar</b>
+													</button>
+												</div>
+											</div>
+										</div>
+
+										<!-- fell -->
+										<div>
+											
+											<button class="botao-pergunta-cria" id="pergunta-fell"> Quem é Felipe? </button>
+											
+											<div class="none" id="criadores-fell">
+												
+												<div class="texto-fell box-pergunta">
+													
+													<div id="img-fell-projeto">
+														<img src="../imagens/fell-img.jpeg">
+
+														<p> &nbsp;&nbsp; Olá, sou o <b>Felipe </b>, estudante de engenharia de software na FIAP. 
+															<br>	&nbsp;&nbsp;&nbsp; Entusiasta da tecnologia, amo e gosto de aprender tudo relacionado a tecnologia.
+															<br>  &nbsp;&nbsp;&nbsp; Além disso, sou dedicado em tudo em que faço, &nbsp;&nbsp; &nbsp;
+															principalmente ligado ao que amo!
+														</p>
+													</div>	
+													
+													<button class="esconder" id="fechar-fell"> 
+														<b>fechar</b>
+													</button>
+												</div>
+											</div>
+										</div>
+
+									<button class="esconder" id="fechar-3"> 
+										<b>fechar</b>
+									</button>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</section>
+
+
+
+
+<footer>
+	<div class="grid-footer">
+
+		<div class="grid-contato">
+			
+			<ul>
+				<li>
+					<button class="botao-contato" id="btn-contato">
+						<a>Entre em contato</a>
+					</button>	
+				</li>
+
+				<div class="formulario none">
+
+					<table>
+						<tr>
+							<td>
+								<input type="text"  placeholder="Nome">
+							</td>
+						</tr>
+						
+						<tr>
+							<td >
+								<input type="text" placeholder="Email">
+							</td>
+							<td>
+								<input type="text" placeholder="Whatsapp">
+							</td>
+						</tr>
+						
+						<tr>
+							<td >
+								<input type="text" id="mensagem" placeholder="Mensagem...">
+							</td>
+						</tr>
+						
+						<tr>
+							<td >
+								<button class="botao-contato-form" type="submit">Enviar</button>
+							</td>
+							
+							<td >
+								<button id="fechar-contato"  class="botao-contato-form"type="submit">Fechar</button>
+							</td>
+						</tr>
+						
+					</table>
+				</div>
+			</ul>
+		</div>
+
+		<div class="grid-link">
+			<ul>
+				<li class="titulo">
+					Links Úteis: 
+				</li>
+					
+				<li class="texto">
+					<a class="footer-link" href="./sobre.html">Sobre</a>
+				</li>
+						
+				<li class="texto" >
+					<a class="footer-link" href="./projeto-sem-login.html">Projeto</a>
+				</li>
+				
+				<li class="texto">
+					<a class="footer-link" href="./cursos-sem-login.html">Cursos</a>
+				</li>
+			</ul>
+		</div>
+	
+
+
+		<div class="grid-projeto">
+			<ul>				
+				<li class="titulo">Projeto: </li>
+							
+				<li class="texto" >	
+					<a class="footer-link" href="./c">Duvidas Frequentes </a>
+				</li>
+				
+			</ul>
+		</div>
+
+		<!-- informacoes e foto do Gustavo -->
+		<div class="grid-Guss">			
+						
+			<div> 
+				<img src="../imagens/perfil na floresta.png" class="img-Guss">
+			</div> 
+
+			<div>
+				<table>
+					<tr>
+						<td class="participantes">
+							<p>Gustavo Bezerra Assumção </p>
+						</td>
+					</tr>
+							
+					<tr>
+						<td class="footer-links">
+							<a href="https://www.linkedin.com/in/gustavo-bezerra-829202289/" class="footer-links-midia" > Linkedin</a>
+						</td>
+					</tr>
+					
+					<tr>
+						<td class="footer-links">
+							<a href="https://www.instagram.com/gustavo_b017/" class="footer-links-midia" > Instagram</a>
+						</td>
+					</tr>
+							
+					<tr>
+						<td class="footer-links" >
+							<a href="https://github.com/Gustavo-b017" class="footer-links-midia"> Github</a> 
+						</td>
+					</tr>
+			
+				</table>	
+			</div>
+		</div>
+
+		<!-- Informacoes e foto do Felipe -->
+		<div class="grid-Fell">
+			<div> 
+				<img src="../imagens/fell-img.jpeg" class="img-Fell">
+			</div> 
+
+			<div style="float: right;">
+				<table >
+					<tr>
+						<td class="participantes">
+							<p> Felipe Ferreira  </p>
+						</td>				
+					</tr>
+							
+					<tr>
+						<td class="links-fell">
+							<a href="https://www.linkedin.com/in/felipe-ferreira-1aa6331a7/" class="footer-links-midia" > Linkedin</a>
+						</td>
+					</tr>
+				
+					<tr>
+						<td class="links-fell">
+							<a href="https://www.instagram.com/feelipensez/" class="footer-links-midia" > Instagram</a>
+						</td>
+					</tr>
+							
+					<tr>
+						<td class="links-fell" >
+								<a href="https://github.com/fellipefferreira" class="footer-links-midia"> Github</a> 
+						</td>			
+					</tr>
+
+				</table>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<script src="../JS/home.js"></script>
+<script src="../JS/projeto.js"></script>
+
 </body>
 </html>
