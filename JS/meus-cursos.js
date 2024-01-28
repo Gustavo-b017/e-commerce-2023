@@ -15,11 +15,6 @@ function closeCourses(){
 
 
 
-
-
-
-
-
 // elementos/variaveis usados para mostar(ou nao) o formulario de contato
 const mostar = document.querySelector("#btn-contato")
 const formulario = document.querySelector(".formulario")
