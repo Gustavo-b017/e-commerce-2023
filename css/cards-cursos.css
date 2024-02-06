@@ -1,188 +1,3 @@
-/* Geral */
-/* definindo forma geral do site*/
-@import url('https://fonts.googleapis.com/css2?family=Konkhmer+Sleokchher&family=Poppins:wght@600&display=swap');
-
-* {
-	margin: 0;
-	padding: 0;
-	text-decoration: none;
-	align-items: center;
-	list-style-type: none;
-	height: auto;
-}
-
-
-/* definindo menu do site */
-/* banner do site */
-
-header{
-    height: auto;
-    background-image: linear-gradient(to right,#ffcb5a6c  ,#479dbed7,#0385b8);
-    background-size:150% 100%;
-    animation: gradient 4.5s infinite alternate;     
-}
-
-.logo{
-	position: relative;
-    right:350px;
-    width: auto;
-	height: 270px;
-    background-color: transparent;
-	padding: 0;
-	top: 20px;
-} 
-
-.logo-header {
-	text-align: center;
-    background-color: transparent;
-}
-
-.nav-ul {
-	overflow: hidden;
-    top: auto;
-    position:relative;
-    left:15px;
-    bottom:30px;
-
-} 
-
-.nav-links {
-	float: left;
-	display: block;
-	color: #000000;
-	font-family:Arial, Helvetica, sans-serif;
-	font-size: 21px;
-	font-weight:500;
-	padding: 15px 20px;
-} 
-
-.nav-img {
-	padding: 0px;
-	margin: 0;
-	height: 55px;
-	width: auto;
-} 
-
-li a:hover {
-background-color:rgba(0, 0, 0, 0.497);
-border-radius:10px;
-color: rgb(255, 255, 255);
-transition:0.8s;
-}
-
-#login {
-	float: right;
-	color: white;
-	position: relative;
-	right:40px;
-	background-color: #2646acd7;
-	border-radius: 10px;
-}
-#login:hover{
-color:black;
-background-color:rgba(255, 255, 255, 0.781);
-border-radius:10px;
-transition:0.5s;
-}
-
-.linha-horizontal{
-	position: relative;
-	left:20px;
-	bottom:25px;
-	width: 40%;
-	border: 0.2px solid black;
-}
-
-.active {
-	color: darkblue;
-}
-
-h2{
-	width:800px;
-	font-size: 30px;
-	color:#22222267;
-	text-align:left;
-	position:relative;
-	left:600px;
-	bottom:200px;
-	font-family: Arial;
-	cursor:pointer;	
-}
-
-h2::before{
-	font-size:30px;
-	content:attr(data-text);
-	position:absolute;
-	color:#fff;
-	width:800px;
-	overflow:hidden;
-	white-space:nowrap;
-	border-right:1px solid #ffffff00;
-	animation:animate 3s linear ;
-	cursor:pointer;
-}
-
-h3{
-	width:655px;
-	font-size: 30px;
-	color:#22222267;
-	text-align:left;
-	position:relative;
-	left:600px;
-	bottom:180px;
-	font-family: Arial;
-	cursor:pointer;
-}
-
-h3::before{
-	content:attr(data-text2);
-	position:absolute;
-	color:#fff;
-	width:700px;
-	overflow: hidden;
-	white-space:nowrap;
-	border-right:1px solid #ffffff00;
-	animation:animation 5s linear ;
-	cursor:pointer;
-}
-
-@keyframes animation{
-	0%,60%{
-		width:0;
-	}
-	80%,90%{
-		width:100%;
-	}
-}
-
-@keyframes animate{
-	0%{
-			width:0;
-	}
-	100%{
-			width:100%;
-	}
-}
-
-@keyframes gradient{
-35%{
-		background-position-x:35%;
-}
-100%{
-		background-position-x:80%;
-}
-} 
-
-section {
-	margin: 0;
-	padding: 100px 0;
-	width: 100%;
-	height: auto;
-	background-image: linear-gradient(to right, #45b4e0,#2b55ca);
-	align-items: center;
-	justify-content: center;
-}
-
 
 
 /* criando os cards dos produtos - SHIFT FIAP */
@@ -191,7 +6,7 @@ section {
     height:430px;
 }
 .fundo-titutlo-shiftfiap{
-	width:350px;
+	width:auto;
 	height:80px;
     position:relative;
 	top:-30px;
@@ -219,98 +34,84 @@ section {
 
 
 #fundo-cards{
-    width:1000px;
+    width:100%;
     display:flex;
-    padding:30px 40px;
-    position:relative;
-	margin-left:50px;
+    padding:auto;
+    
 
 }
- .card{
-    width:300px;
-    height:380px;
-    border:1px solid rgba(66, 61, 61, 0.426);
-    border-radius:20px;
-    box-shadow:0 0 10px 5px rgba(0,0,0,0.2);
-    background-color: rgb(255, 255, 255);
-    cursor:pointer;
-    margin-right:40px;   
- }
- .card:hover{
+.card{
+	width:auto;
+	height:auto;
+	border:1px solid rgba(66, 61, 61, 0.426);
+	border-radius:20px;
+	box-shadow:0 0 10px 5px rgba(0,0,0,0.2);
+	background-color: rgb(255, 255, 255);
+	cursor:pointer;
+	margin: 10px;  
+}
+
+.card:last-child{
+	width:auto;
+	height:auto;
+	border:1px solid rgba(66, 61, 61, 0.426);
+	border-radius:20px;
+	box-shadow:0 0 10px 5px rgba(0,0,0,0.2);
+	background-color: rgb(255, 255, 255);
+	cursor:pointer;
+	margin: 10px;  
+}
+.card:hover{
 	background-color: #d5f1ff;
 	transition:0.5s;
- }
- .python-img-card{
-    border-radius:20px 20px 0px 0px;
-    position:relative;
-    right:1px;
-    bottom:1px;
- }
- .java-img-card{
-    border-radius:20px 20px 0px 0px;
-    position:relative;
-    right:1px;
-    bottom:1px;
-	height:190px;
- }
- .IA-img-card{
-	border-radius:20px 20px 0px 0px;
-    position:relative;
-    right:1px;
-    bottom:1px;
-	height:190px;
- }
- .security-img-card{
-	border-radius:20px 20px 0px 0px;
-    position:relative;
-    right:1px;
-    bottom:1px;
-	height:190px;
- }
+}
 
- .conteudo .titulo{
-    position:relative;
-    top:50px;
-    right:90px;
-    font-family:arial;
-    font-size:27px;  
- }
- .conteudo .titulo-IA{
-	position:relative;
-    top:46px;
-    left:20px;
-    font-family:arial;
-    font-size:23px;  
- }
- .conteudo .titulo-security{
-	position:relative;
-    top:46px;
-    left:20px;
-    font-family:arial;
-    font-size:23px;  
- }
- .preco{
-    position:relative;
-    left:200px;
-    top:24px;
-    font-family:sans-serif;
-    font-weight:750;
-    font-size: 20px;
- }
+
+.imagem-cursos{
+	border-radius:20px ;
+	height:190px;
+	width: 270px;
+}
+
+
+.conteudo-interno{
+	width: auto;
+}
+
+.titulo-cards{
+	font-family:arial;
+	font-size:30px;  
+	text-align: center;
+	margin: 15px 0px;
+}
+
+.preco{
+	font-family:sans-serif;
+	font-weight:750;
+	margin: 10px 0px;
+	text-align: right;
+	font-size: 20px;
+}
+
 .botao-comprar{
-    position:relative;
-    top:80px;
-    left:20px;
-    width:250px;
+	text-align: center;
+	justify-content: center;
+	margin: 2px;
+    width: 240px;
     height:30px;
     border-radius:10px;
     cursor:pointer;
     background-color: darkgreen;
-		color: #fff;
-    border:1px solid;
+	color: #fff;
+    border:none;
     font-family:arial;
     font-size:15px;
 }
+
+.btn-compra {
+	text-align: center;
+}
+
 .botao-comprar:hover{
     background-color: #8dffff42;
     transition:1s;
