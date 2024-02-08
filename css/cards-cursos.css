@@ -32,11 +32,16 @@
 	
 }
 
+.posicao-cards {
+	text-align: center;
+	align-items: center;
+}
 
 #fundo-cards{
     width:100%;
     display:flex;
     padding:auto;
+		justify-content: center;
     
 
 }
