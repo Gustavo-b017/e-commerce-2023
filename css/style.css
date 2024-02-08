@@ -5,6 +5,7 @@
 
 
 * {
+	border: 1px solid red;
 	margin: 0;
 	padding: 0;
 	text-decoration: none;
@@ -43,7 +44,7 @@ header{
 	overflow: hidden;
     top: auto;
     position:relative;
-    left:15px;
+    margin-left:15px;
     bottom:30px;
 
 } 
@@ -99,51 +100,49 @@ transition:0.5s;
 	color: darkblue;
 }
 
-#frase_1 {
-	width:550px;
-	font-size: 30px;
+h2 {
+	width:730px;
+	font-size: 28px;
 	color:#22222267;
 	text-align:left;
 	position:relative;
-	left:600px;
+	margin-left:auto;
 	bottom:200px;
 	font-family: Arial;
 	cursor:pointer;	
 }
 
-#frase_1::before{
-	font-size:30px;
+h2::before{
+	font-size:auto;
     content:attr(data-text);
     position:absolute;
     color:#fff;
     width:auto;
     overflow:hidden;
     white-space:nowrap;
-    border-right:1px solid #ffffff00;
     animation:animate 3s linear ;
     cursor:pointer;
 }
 
-#frase_2{
-	width:550px;
-    font-size: 30px;
+h3{
+	width:730px;
+    font-size: 28px;
     color:#22222267;
     text-align:left;
     position:relative;
-    left:600px;
+    margin-left: auto;
     bottom:180px;
     font-family: Arial;
     cursor:pointer;
 }
 
-#frase_2::before{
+h3::before{
 	content:attr(data-text2);
     position:absolute;
     color:#fff;
-    width:550px;
+    width:auto;
     overflow: hidden;
     white-space:nowrap;
-    border-right:1px solid #ffffff00;
     animation:animation 5s linear ;
     cursor:pointer;
 }

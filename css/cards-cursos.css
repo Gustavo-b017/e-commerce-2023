@@ -22,6 +22,54 @@
 	color:#FFF;
 
 }
+#frase_1 {
+	width:550px;
+	font-size: 30px;
+	color:#22222267;
+	text-align:left;
+	position:relative;
+	left:600px;
+	bottom:200px;
+	font-family: Arial;
+	cursor:pointer;	
+}
+
+#frase_1::before{
+	font-size:30px;
+    content:attr(data-text);
+    position:absolute;
+    color:#fff;
+    width:auto;
+    overflow:hidden;
+    white-space:nowrap;
+    border-right:1px solid #ffffff00;
+    animation:animate 3s linear ;
+    cursor:pointer;
+}
+
+#frase_2{
+	width:550px;
+    font-size: 30px;
+    color:#22222267;
+    text-align:left;
+    position:relative;
+    left:600px;
+    bottom:180px;
+    font-family: Arial;
+    cursor:pointer;
+}
+
+#frase_2::before{
+	content:attr(data-text2);
+    position:absolute;
+    color:#fff;
+    width:550px;
+    overflow: hidden;
+    white-space:nowrap;
+    border-right:1px solid #ffffff00;
+    animation:animation 5s linear ;
+    cursor:pointer;
+}
 .fiap{
 	font-family: arial;
 	font-size: 45px;
