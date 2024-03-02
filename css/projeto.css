@@ -1,89 +1,37 @@
+
+
 section {
-  margin: 0;
-  padding: 0;
   font-family: sans-serif;
-  display: grid; 
   width: 100%;
-  height: 100%;
-  position: relative;
-  place-content: center;
+  box-sizing: border-box;
+  padding: 0 5% ;
 }
 
-.box-geral {
-  background-color: transparent;
-}
-
-.box-estatico {
-  position: relative;
-  background-color: transparent;
-  height: 200px;
-  width: 200px;
-  transform-style: preserve-3d;
-  transform: rotateY(0deg);
-  transition: transform 0.5s;
-}
-
-.front, .conteudo {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-}
-
-.front img {
-  width: 100%;
-  height: auto;
-}
-
-.conteudo {
-  background-color: aqua;
-  transform: rotateY(180deg) ;
-}
-
-.box-geral:hover .box-estatico {
-  display: flex;
-  transform: rotateY(180deg);
-  width: 900pt;
-  height: 30pc;
-  margin: auto;
-
-}
-
-.box-estatico:hover .conteudo-interno {
-  margin: 0px;
-}
 
 .conteudo-interno {
-  height: auto;
-  width: auto;
-  display: grid;
-  grid-template-areas: 
-  'video perguntas';
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
 }
 
-.conteudo-video, .conteudo-perguntas  {
-  grid-area: video;
-  padding: 20px;
-  margin: 20px;
-  height: auto;
-  width: auto;
+#video-projeto  {
+  justify-content: start;
+  padding: 10px;
+  width: 50%;
 }
 
-.conteudo-perguntas {
-  grid-area: perguntas;
+.conteudo-perguntas{
+  width: 50%;
 }
 
 .conteudo-interno h1 {
-  font-size: 30px;
-  margin: 0px 0px 15px 0px;
+  font-size: 35px;
+  font-weight: 600;
+  margin: 15px 5px;
 }
 
 .video {
   width: 100%;
-  margin: auto;
-  padding: auto;
   border-radius: 20px;
 }
 
@@ -110,10 +58,9 @@ section {
 }
 
 .box-pergunta {
-  width: 94%;
-  font-size: 17px;
-  margin: 0px 10px;
-  padding: 8px;
+  padding: 10px;
+  width: 100%;
+  font-size: 20px;
 }
 
 .esconder {
@@ -128,6 +75,7 @@ section {
 }
 
 #img-guss-projeto {
+  box-sizing: border-box;
   display: grid;
   grid-template-areas: 
   'foto texto';
@@ -145,16 +93,16 @@ section {
 
 #img-guss-projeto p {
   grid-area: texto;
-  margin: 10px;
+  margin: 5px;
   padding: 0px;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 20px;
   border: 1px solid red;
   height: auto;
   width: auto;
 }
 
 #img-fell-projeto {
+  box-sizing: border-box;
   display: grid;
   grid-template-areas: 
   'foto texto';
@@ -172,9 +120,10 @@ section {
 
 #img-fell-projeto p {
   grid-area: texto;
-  margin: 10px;
+  margin: 5px;
   padding: 0px;
-  font-size: 17px;
+  font-size: 20px;
+  border: 1px solid red;
   height: auto;
   width: auto;
 }
